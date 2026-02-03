@@ -1,0 +1,133 @@
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import aboutHero from "../assets/sri-lanka-travel-guide.jpg";
+
+import foodDrinks from "../assets/FoodDrinks.jpg";
+import thingstodo from "../assets/Things-To-Do-In-Sri-Lanka.jpg";
+
+function TravelGuide() {
+
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: true });
+    }, []);
+
+    /* ================= TOUR DATA ================= */
+    const tours = [
+        {
+            id: 1,
+            title: "Food & Drinks",
+            category: "Food & Drinks",
+            image: foodDrinks,
+            description: "Sri Lanka is a tropical island, and the food aptly reflects laid-back island vibes, the exotic culture and friendly nature of locals, ever ready to share a meal."
+        },
+        {
+            id: 2,
+            title: "Things to do",
+            category: "Things to do",
+            image: thingstodo,
+            description: "From the hilly regions of mid-country to the untouched wonders of the north, and gorgeous beaches along the coast; Sri Lanka is a treasure chest waiting to be discovered."
+        }
+    ];
+
+    const [category, setCategory] = useState("All");
+
+    const filteredTours =
+        category === "All"
+            ? tours
+            : tours.filter((tour) => tour.category === category);
+
+    return (
+        <div className="w-full overflow-hidden">
+
+            {/* ================= HERO ================= */}
+            <section className="relative h-[40vh] w-full">
+                <div
+                    className="absolute inset-0 bg-fill bg-center"
+                    style={{ backgroundImage: `url(${aboutHero})` }}
+                />
+                <div className="absolute inset-0 bg-black/60" />
+
+                <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
+                    <h1
+                        data-aos="fade-up"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+                    >
+                        Travel Guide
+                    </h1>
+
+                    <p
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                        className="mt-4 sm:mt-6 max-w-full sm:max-w-2xl md:max-w-3xl text-sm sm:text-base md:text-lg"
+                    >
+                        Your trusted guide to Sri Lanka’s best experiences
+                    </p>
+                </div>
+            </section>
+
+            {/* ================= CATEGORY FILTER ================= */}
+            <section className="bg-[#f7f9fc] py-5">
+                <div className="mx-auto max-w-6xl px-6 flex justify-center">
+                    <select
+                        value={category}
+                        onChange={(e) => setCategory(e.target.value)}
+                        className="w-full max-w-md rounded-lg border px-4 py-3 text-lg shadow-md"
+                    >
+                        <option value="All">All Travel Guide</option>
+                        <option value="Food & Drinks">Food & Drinks</option>
+                        <option value="Things to do">Things to do</option>
+                    </select>
+                </div>
+            </section>
+
+            {/* ================= TOUR RESULTS ================= */}
+            <section className="bg-white py-10">
+                <div className="mx-auto max-w-7xl px-6 space-y-20">
+
+                    {filteredTours.map((tour, index) => (
+                        <div
+                            key={tour.id}
+                            data-aos="fade-up"
+                            className={`relative grid items-center gap-10 md:grid-cols-2 ${index % 2 === 0 ? "" : "md:flex-row-reverse"
+                                }`}
+                        >
+
+                            {/* IMAGE BLOCK */}
+                            <div className={`relative ${index % 2 === 0 ? "md:order-1" : "md:order-2"}`}>
+                                <div
+                                    className={`absolute -inset-y-6 w-[300px] bg-[#0b4c7d] z-0 ${index % 2 === 0 ? "-left-6" : "-right-6"}`}
+                                ></div>
+                                <img
+                                    src={tour.image}
+                                    alt={tour.title}
+                                    className="relative z-10 h-[330px] w-full object-fill shadow-xl"
+                                />
+                            </div>
+
+                            {/* TEXT BLOCK */}
+                            <div className={`z-10 ${index % 2 === 0 ? "md:order-2" : "md:order-1"}`}>
+                                <h2 className="text-3xl font-bold text-[#0b4c7d] mb-4">
+                                    {tour.title}
+                                </h2>
+                                <p className="text-gray-600 leading-relaxed mb-8">
+                                    {tour.description}
+                                </p>
+
+                                <button className="rounded-full bg-[#00a7c4] px-8 py-2 text-white font-semibold hover:bg-[#008fa8] transition">
+                                    View More
+                                </button>
+                            </div>
+
+                        </div>
+                    ))}
+
+                </div>
+            </section>
+
+        </div>
+    );
+}
+
+export default TravelGuide;

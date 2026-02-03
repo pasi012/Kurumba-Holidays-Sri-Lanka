@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://balasooriyatravels.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://balasooriyatravels.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://balasooriyatravels.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://balasooriyatravels.com/tour-packages</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://balasooriyatravels.com/custom-tour-packages</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://balasooriyatravels.com/rent-a-car</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://balasooriyatravels.com/vehicle-recovery-service</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://balasooriyatravels.com/places</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://balasooriyatravels.com/services</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Places -->
+  <url><loc>https://balasooriyatravels.com/places/battalangunduwa</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/damro-tea</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/ambuluwawa</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/pasikuda</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/nuwara-eliya</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/adam’s-peak</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/kalmunai</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/negombo</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/tangalle</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/pinnawala</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/jaffna</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/diyaluma-falls</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/trincomalee</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/ella</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/mirissa</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/galleface</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/anuradhapura</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/hikkaduwa</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/yala</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/galle</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/udawalawe</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/arugam-bay</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/katharagama</loc></url>
+  <url><loc>https://balasooriyatravels.com/places/polonnaruwa</loc></url>
+
+  <!-- Legal -->
+  <url>
+    <loc>https://balasooriyatravels.com/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://balasooriyatravels.com/terms-condition</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
