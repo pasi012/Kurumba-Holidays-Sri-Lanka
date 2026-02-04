@@ -55,35 +55,216 @@ function Home() {
       name: "Negombo",
       position: [7.2083, 79.8358],
       description:
-        "Negombo is a seaside town famous for its golden beaches, lagoon and fishing culture. Located close to the international airport, it is a perfect start or end to your Sri Lankan journey.",
+        "Negombo is a charming coastal town famous for its golden beaches, traditional fishing villages and peaceful lagoon. Located just minutes from Sri Lanka’s international airport, Negombo is the perfect place to relax after a long flight or to begin your Sri Lankan adventure. Enjoy fresh seafood, boat rides, and beautiful sunsets over the Indian Ocean.",
+      image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/be/ac/b8.jpg",
     },
     {
       id: 2,
-      name: "Colombo",
-      position: [6.9271, 79.8612],
+      name: "Kalpitiya",
+      position: [8.2297, 79.7182],
       description:
-        "Colombo is Sri Lanka’s commercial capital featuring colonial buildings, modern shopping malls, vibrant nightlife and rich street food culture.",
+        "Kalpitiya is a tropical paradise on Sri Lanka’s northwest coast, famous for dolphin and whale watching, pristine beaches and exciting kitesurfing experiences. The calm lagoons and untouched shores make it ideal for nature lovers and adventure seekers alike.",
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/23/d9/ca/nearly-1600-km-os-beaches.jpg?w=1000&h=1000&s=1",
     },
     {
       id: 3,
-      name: "Kandy",
-      position: [7.2906, 80.6337],
+      name: "Wilpattu National Park",
+      position: [8.4500, 80.0167],
       description:
-        "Kandy is the cultural heart of Sri Lanka and home to the Temple of the Sacred Tooth Relic, surrounded by lush hills and tea plantations.",
+        "Wilpattu is Sri Lanka’s largest national park, renowned for its natural lakes and rich wildlife. This untouched wilderness offers visitors the chance to see leopards, elephants, sloth bears and rare birds in a peaceful, unspoiled environment.",
+      image: "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=center,quality=60,width=400,height=265,dpr=2/tour_img/f991184bc0391eab0a7c5c376b21eb09ae20aef3077bdedf9d62bfe19256aa4a.jpg",
     },
     {
       id: 4,
-      name: "Galle",
-      position: [6.0535, 80.221],
-      description:
-        "Galle Fort is a UNESCO World Heritage Site known for colonial architecture, charming cafes, boutique streets and breathtaking ocean views.",
-    },
-    {
-      id: 5,
       name: "Anuradhapura",
       position: [8.3114, 80.4037],
       description:
-        "Anuradhapura is an ancient capital filled with sacred Buddhist temples, massive stupas and over 2,000 years of spiritual heritage.",
+        "Anuradhapura is one of Sri Lanka’s most sacred ancient cities, home to towering stupas, sacred Bodhi trees and ancient monasteries. Walking through this UNESCO World Heritage site is like stepping back more than 2,000 years into the island’s rich spiritual history.",
+      image: "https://d31t1a4b1z64ez.cloudfront.net/2023/05/ruwanveli-seya-pagoda-m.webp",
+    },
+    {
+      id: 5,
+      name: "Dambulla",
+      position: [7.8567, 80.6492],
+      description:
+        "Dambulla is famous for its ancient cave temples filled with beautiful Buddha statues and vibrant murals. It is one of the best preserved cave temple complexes in Asia and a spiritual highlight of Sri Lanka.",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Golden_Buddha_and_Buddhist_Museum_at_Dambulla.jpg/1280px-Golden_Buddha_and_Buddhist_Museum_at_Dambulla.jpg",
+    },
+    {
+      id: 6,
+      name: "Sigiriya Rock Fortress",
+      position: [7.9570, 80.7603],
+      description:
+        "Sigiriya is Sri Lanka’s most iconic landmark. Rising dramatically from the jungle, this ancient rock fortress offers breathtaking views, royal gardens, frescoes and a mirror wall dating back over 1,500 years.",
+      image: "https://media.istockphoto.com/id/1146786448/photo/aerial-view-from-above-of-sigiriya-or-the-lion-rock-an-ancient-fortress-and-a-palace-with.jpg?s=612x612&w=0&k=20&c=KiwLmEYVBKNqKfycjBH414u4b6O3IrrE6_C-IKkKAOI=",
+    },
+    {
+      id: 7,
+      name: "Minneriya National Park",
+      position: [8.0375, 80.9039],
+      description:
+        "Minneriya National Park is world famous for the ‘Gathering’, where hundreds of wild elephants come together around the reservoir. It is one of the best wildlife experiences in Sri Lanka.",
+      image: "https://lh4.googleusercontent.com/proxy/6k9KZ-ubX_78pp3vO8gAq5HELZ2yS_2PPfzQxlqgMYIVNZjyycxmuEbhGv7fCzwlNleYCBL0g9paIMb48xfSMkfCS59GjXHs0f5_jq_fWHnkxvMrB9Os1hzdgb8_qEZlJBHYxPRwVR902oRTqQ",
+    },
+    {
+      id: 8,
+      name: "Polonnaruwa",
+      position: [7.9403, 81.0188],
+      description:
+        "Polonnaruwa is an ancient royal city with stunning ruins, statues and palaces. It offers a fascinating glimpse into Sri Lanka’s medieval history and engineering excellence.",
+      image: "https://therestlessbeans.com/wp-content/uploads/2025/04/ancient-city-of-polonnaruwa-sri-lanka-statue-reclining-budha.webp",
+    },
+    {
+      id: 9,
+      name: "Pasikuda",
+      position: [7.9250, 81.5670],
+      description:
+        "Pasikuda is famous for its calm, shallow waters and beautiful white sandy beaches. It is one of the safest and most relaxing beaches on Sri Lanka’s east coast.",
+      image: "https://overatours.com/wp-content/uploads/2020/09/DSC_9714-1.jpg",
+    },
+    {
+      id: 10,
+      name: "Knuckles Mountain Range",
+      position: [7.4667, 80.7833],
+      description:
+        "The Knuckles Mountain Range offers breathtaking landscapes, misty peaks, waterfalls and hiking trails. It is perfect for adventure lovers and nature explorers.",
+      image: "https://admin.myceylonadventures.com/uploads/Trekking_Tour_in_Kandy_Knuckles_Feachured_60b26beeb3.jpg",
+    },
+    {
+      id: 11,
+      name: "Kandy",
+      position: [7.2906, 80.6337],
+      description:
+        "Kandy is the cultural heart of Sri Lanka and home to the sacred Temple of the Tooth Relic. Surrounded by hills and tea plantations, it is rich in tradition, beauty and heritage.",
+      image: "https://thatswhatshehad.com/wp-content/uploads/2018/07/chathura-anuradha-subasinghe-40uQmE9Zq8g-unsplash-1024x683.jpg",
+    },
+    {
+      id: 12,
+      name: "Kitulgala",
+      position: [6.9890, 80.4167],
+      description:
+        "Kitulgala is Sri Lanka’s adventure capital, famous for white water rafting, jungle trekking and bird watching along the Kelani River.",
+      image: "https://gobeyond.asia/var/site/storage/images/media/images/country-pages/sri-lanka/kandy-and-nearby/kandy-and-nearby-trips/kithulgala-adventure/kithulgala-adventure-1/3940508-1-eng-GB/kithulgala-adventure-1_gallery_full.png",
+    },
+    {
+      id: 13,
+      name: "Horton Plains",
+      position: [6.8094, 80.8031],
+      description:
+        "Horton Plains is a beautiful highland national park known for its rolling grasslands, cloud forests and the dramatic World’s End cliff.",
+      image: "https://images.ctfassets.net/2ctencdtf9g8/3zGSabBcz2kChEMGzsoDlU/ff1bdcace659a4d80ed0586f8fd7e86f/horton8-min.jpg",
+    },
+    {
+      id: 14,
+      name: "Gal Oya National Park",
+      position: [7.2917, 81.4833],
+      description:
+        "Gal Oya is famous for its unique boat safaris where visitors can see elephants swimming between islands in the reservoir.",
+      image: "https://images.squarespace-cdn.com/content/v1/6090e44108fff025fb6cf10a/ea9a3477-8a3e-46d3-8c77-5646f62bb12b/Gal+Oya+watering+hole+-+Small.jpg",
+    },
+    {
+      id: 15,
+      name: "Arugam Bay",
+      position: [6.8428, 81.8369],
+      description:
+        "Arugam Bay is Sri Lanka’s top surfing destination, offering world-class waves, relaxed beach vibes and stunning sunrises.",
+      image: "https://overatours.com/wp-content/uploads/2021/10/Surfing-in-Arugam-Bay.jpg",
+    },
+    {
+      id: 16,
+      name: "Kalutara",
+      position: [6.5831, 79.9607],
+      description:
+        "Kalutara is a peaceful beach town famous for its sacred Kalutara Bodhiya and palm-lined coastline.",
+      image: "https://www.boutiquecollectionbyamaya.com/villas-wadduwa/wp-content/uploads/sites/12/2022/10/kalutara-gall-feat.jpg",
+    },
+    {
+      id: 17,
+      name: "Bentota",
+      position: [6.4211, 79.9989],
+      description:
+        "Bentota is a luxury beach destination offering water sports, river safaris and elegant resorts.",
+      image: "https://live.staticflickr.com/65535/50009234931_1a80fb78d1_b.jpg",
+    },
+    {
+      id: 18,
+      name: "Sinharaja Forest Reserve",
+      position: [6.4050, 80.4600],
+      description:
+        "Sinharaja is a UNESCO-listed rainforest and biodiversity hotspot filled with rare birds, butterflies and ancient trees.",
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/24/04/bb/caption.jpg?w=1200&h=-1&s=1",
+    },
+    {
+      id: 19,
+      name: "Udawalawe National Park",
+      position: [6.4630, 80.8917],
+      description:
+        "Udawalawe is the best place in Sri Lanka to see wild elephants in their natural habitat.",
+      image: "https://overatours.com/wp-content/uploads/2017/11/156-1024x683.jpg",
+    },
+    {
+      id: 20,
+      name: "Yala National Park",
+      position: [6.3667, 81.5167],
+      description:
+        "Yala is Sri Lanka’s most famous wildlife park, known for having one of the highest leopard populations in the world.",
+      image: "https://overatours.com/wp-content/uploads/2021/09/25.jpg",
+    },
+    {
+      id: 21,
+      name: "Bundala National Park",
+      position: [6.2000, 81.2000],
+      description:
+        "Bundala is a bird lover’s paradise, home to thousands of migratory birds and peaceful wetlands.",
+      image: "https://nexttravelsrilanka.com/wp-content/uploads/2021/05/White-Greater-flamingos-in-a-swamp-by-a-lawn-at-Bundala-National-Park-the-Wonderful-Land-of-Birds-in-Sri-Lanka.jpg",
+    },
+    {
+      id: 22,
+      name: "Tangalle",
+      position: [6.0240, 80.7968],
+      description:
+        "Tangalle offers long golden beaches, turquoise waters and a peaceful tropical atmosphere.",
+      image: "https://static.horizonguides.com/images/_matrixImage/Sri-Lanka_Tangalle.jpg",
+    },
+    {
+      id: 23,
+      name: "Mirissa",
+      position: [5.9483, 80.4716],
+      description:
+        "Mirissa is famous for whale watching, beach cafes and relaxed island vibes.",
+      image: "https://www.srilankalocaltours.com/wp-content/uploads/MIRISSA.jpg",
+    },
+    {
+      id: 24,
+      name: "Koggala",
+      position: [5.9883, 80.3270],
+      description:
+        "Koggala is known for its beautiful beaches, lagoon and traditional stilt fishermen.",
+      image: "https://www.worldbeachguide.com/photos/large/koggala-fishermen.jpg",
+    },
+    {
+      id: 25,
+      name: "Unawatuna",
+      position: [6.0212, 80.2503],
+      description:
+        "Unawatuna is one of Sri Lanka’s most popular beaches, perfect for swimming, snorkeling and beach life.",
+      image: "https://nexttravelsrilanka.com/wp-content/uploads/2023/02/Unawatuna.jpg",
+    },
+    {
+      id: 26,
+      name: "Galle",
+      position: [6.0535, 80.2210],
+      description:
+        "Galle Fort is a UNESCO World Heritage Site filled with colonial architecture, boutique shops and ocean views.",
+      image: "https://do6raq9h04ex.cloudfront.net/sites/8/2021/07/galle-fort-1050x700-1.jpg",
+    },
+    {
+      id: 27,
+      name: "Hikkaduwa",
+      position: [6.1400, 80.1000],
+      description:
+        "Hikkaduwa is famous for coral reefs, snorkeling, surfing and lively beach culture.",
+      image: "https://lakpura.com/cdn/shop/products/LK58110100-05-E-1280-720.jpg?v=1625585412&width=1445",
     },
   ];
 
@@ -173,7 +354,6 @@ function Home() {
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   };
-
 
   return (
     <div className="w-full overflow-hidden">
@@ -330,8 +510,22 @@ function Home() {
             </MapContainer>
           </div>
           <div className="flex-1 p-6 sm:p-10">
-            <h3 className="text-2xl text-[#0ea5a4]">{selectedPlace.name}</h3>
-            <p className="mt-4">{selectedPlace.description}</p>
+            <h3 className="text-2xl font-semibold text-[#0ea5a4]">
+              {selectedPlace.name}
+            </h3>
+
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              {selectedPlace.description}
+            </p>
+
+            {/* Image */}
+            <div className="mt-6">
+              <img
+                src={selectedPlace.image}
+                alt={selectedPlace.name}
+                className="w-full max-w-md rounded-xl shadow-lg object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -700,7 +894,7 @@ function Home() {
                   onChange={onCaptchaChange}
                 />
               </div> */}
- 
+
               {/* Buttons */}
               <div className="md:col-span-2 flex flex-col sm:flex-row gap-4 sm:gap-6 mt-6 sm:mt-10">
 
@@ -724,6 +918,20 @@ function Home() {
 
         </div>
       </section>
+
+      {/* ================= WHATSAPP BUTTON ================= */}
+      <a
+        href="https://wa.me/94743412910"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-5 right-5 z-50"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
+          alt="WhatsApp"
+          className="h-12 w-12 rounded-full shadow-lg transition hover:scale-110 sm:h-14 sm:w-14"
+        />
+      </a>
 
     </div>
   );

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 import aboutHero from "../assets/hero1.jpg";
 
@@ -18,6 +19,8 @@ import natureTours from "../assets/Nature Tours.jpg";
 
 function TourPackages() {
 
+    const navigate = useNavigate();
+
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
     }, []);
@@ -28,6 +31,7 @@ function TourPackages() {
             id: 1,
             title: "Cultural",
             category: "Cultural",
+            slug: "cultural",
             image: cultural,
             description: "Explore ancient sites seemingly lost in time, uncover the stories behind local legends and be awed by monuments that are intertwined with the island’s culture."
         },
@@ -35,6 +39,7 @@ function TourPackages() {
             id: 2,
             title: "Hill Country",
             category: "Hill Country",
+            slug: "hill-country",
             image: hillCountry,
             description: "A perfect blend of beauty, history and culture, the hill country emulates the very essence of authentic Sri Lanka, tucked away amidst emerald covered mountains."
         },
@@ -42,6 +47,7 @@ function TourPackages() {
             id: 3,
             title: "Romantic",
             category: "Romantic",
+            slug: "romantic",
             image: romantic,
             description: "From weddings packages tailor-made just for you and intimate honeymoon experiences, we offer you the chance to celebrate your love in style!"
         },
@@ -49,6 +55,7 @@ function TourPackages() {
             id: 4,
             title: "Ayurveda & Wellness",
             category: "Ayurveda & Wellness",
+            slug: "ayurveda-wellness",
             image: ayurveda,
             description: "Indulge in an integrated wellness and Ayurveda retreat where your health and complete well-being is at the centre of a relaxing holiday experience."
         },
@@ -56,6 +63,7 @@ function TourPackages() {
             id: 5,
             title: "Excursions",
             category: "Excursions",
+            slug: "excursions",
             image: excursions,
             description: "Immerse yourself in truly enriching adventures that let you experience the island’s scenic landscapes, traditional culture and exotic wildlife."
         },
@@ -63,6 +71,7 @@ function TourPackages() {
             id: 6,
             title: "Beach",
             category: "Beach",
+            slug: "beach",
             image: beach,
             description: "Surrounded by the Indian Ocean, Sri Lanka has some of the best beaches to discover with pristine shores of paradise amidst seaside serenades."
         },
@@ -70,6 +79,7 @@ function TourPackages() {
             id: 7,
             title: "Special Interest Tours",
             category: "Special Interest Tours",
+            slug: "special-interest-tours",
             image: specialTours,
             description: "Unique perspectives of cultural richness & diversity"
         },
@@ -77,6 +87,7 @@ function TourPackages() {
             id: 8,
             title: "Vacation Sri Lanka",
             category: "Vacation Sri Lanka",
+            slug: "vacation-sri-lanka",
             image: vacation,
             description: "The perfect holiday destination, Sri Lanka has a rich appeal for travellers across the planet offering everything from beachside bliss to an engaging culture."
         },
@@ -84,6 +95,7 @@ function TourPackages() {
             id: 9,
             title: "Seat-In-Coach Tours in Sri Lanka",
             category: "Seat-In-Coach Tours in Sri Lanka",
+            slug: "seat-in-coach-tours",
             image: seatInCoachTours,
             description: "Embark on a memorable expedition as part of a group tour where you will not only visit sites rich in culture and natural wonder but build new friendships as well."
         },
@@ -91,6 +103,7 @@ function TourPackages() {
             id: 10,
             title: "Ramayana Trails in Sri Lanka",
             category: "Ramayana Trails in Sri Lanka",
+            slug: "ramayana-trails-in-sri-lanka",
             image: ramayanaTrails,
             description: "Follow the legends of Ramayana trails"
         },
@@ -98,6 +111,7 @@ function TourPackages() {
             id: 11,
             title: "Nature Tours",
             category: "Nature Tours",
+            slug: "nature-tours",
             image: natureTours,
             description: "Embark on discovering a treasured journey of nature!"
         }
@@ -197,7 +211,9 @@ function TourPackages() {
                                     {tour.description}
                                 </p>
 
-                                <button className="rounded-full bg-[#00a7c4] px-8 py-2 text-white font-semibold hover:bg-[#008fa8] transition">
+                                <button
+                                    onClick={() => navigate(`/tours/${tour.slug}`)}
+                                    className="rounded-full bg-[#00a7c4] px-8 py-2 text-white font-semibold hover:bg-[#008fa8] transition">
                                     View More
                                 </button>
                             </div>
@@ -208,6 +224,19 @@ function TourPackages() {
                 </div>
             </section>
 
+            {/* ================= WHATSAPP BUTTON ================= */}
+            <a
+                href="https://wa.me/94743412910"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fixed bottom-5 right-5 z-50"
+            >
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
+                    alt="WhatsApp"
+                    className="h-12 w-12 rounded-full shadow-lg transition hover:scale-110 sm:h-14 sm:w-14"
+                />
+            </a>
 
         </div>
     );

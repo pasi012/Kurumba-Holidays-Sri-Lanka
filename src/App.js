@@ -15,6 +15,8 @@ import RentVehicle from "./pages/RentVehicle";
 import Expertise from "./pages/Expertise";
 import TravelGuide from "./pages/TravelGuide";
 import Accommodation from "./pages/Accommodation";
+import CulturalTours from "./pages/tours/cultural/CulturalTours";
+import CulturalHighlightsTour from "./pages/tours/cultural/CulturalHighlightsTour";
 
 function App() {
     return (
@@ -34,6 +36,11 @@ function App() {
                 <Route path="/expertise" element={<Expertise />} />
                 <Route path="/travel-guide" element={<TravelGuide />} />
                 <Route path="/accommodation" element={<Accommodation />} />
+
+                {/* tours */}
+                <Route path="/tours/cultural" element={<CulturalTours />} />
+
+                <Route path="/tours/cultural/cultural-highlights-tour" element={<CulturalHighlightsTour />} />
                 
             </Routes>
             <Footer />

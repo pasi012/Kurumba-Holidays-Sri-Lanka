@@ -154,6 +154,19 @@ function Experience() {
                 </div>
             </section>
 
+            {/* ================= WHATSAPP BUTTON ================= */}
+            <a
+                href="https://wa.me/94743412910"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fixed bottom-5 right-5 z-50"
+            >
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
+                    alt="WhatsApp"
+                    className="h-12 w-12 rounded-full shadow-lg transition hover:scale-110 sm:h-14 sm:w-14"
+                />
+            </a>
 
         </div>
     );
