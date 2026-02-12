@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { useNavigate } from "react-router-dom";
+
 import aboutHero from "../assets/accommodation.jpg";
 
 import luxury from "../assets/Luxury Beach Resorts.jpg";
@@ -11,6 +13,9 @@ import villas from "../assets/Villas & Private Bungalows.jpg";
 import budget from "../assets/Budget & City Hotels.jpg";
 
 function Accommodation() {
+
+    const navigate = useNavigate();
+
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
     }, []);
@@ -20,6 +25,7 @@ function Accommodation() {
         {
             id: 1,
             title: "Luxury Beach Resorts",
+            slug: "luxury-beach-resorts",
             category: "Luxury",
             image: luxury,
             description:
@@ -28,6 +34,7 @@ function Accommodation() {
         {
             id: 2,
             title: "Boutique Hotels",
+            slug: "boutique-hotels",
             category: "Boutique",
             image: boutique,
             description:
@@ -36,6 +43,7 @@ function Accommodation() {
         {
             id: 3,
             title: "Eco Lodges & Nature Stays",
+            slug: "eco-lodges-nature-stays",
             category: "Eco",
             image: eco,
             description:
@@ -44,6 +52,7 @@ function Accommodation() {
         {
             id: 4,
             title: "Villas & Private Bungalows",
+            slug: "villas-private-bungalows",
             category: "Villas",
             image: villas,
             description:
@@ -52,6 +61,7 @@ function Accommodation() {
         {
             id: 5,
             title: "Budget & City Hotels",
+            slug: "budget-city-hotels",
             category: "Budget",
             image: budget,
             description:
@@ -80,7 +90,7 @@ function Accommodation() {
                 <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white px-6">
                     <h1
                         data-aos="fade-up"
-                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
                     >
                         Accommodation
                     </h1>
@@ -148,9 +158,13 @@ function Accommodation() {
                                     {item.description}
                                 </p>
 
-                                <button className="rounded-full bg-[#00a7c4] px-8 py-3 text-white font-semibold hover:bg-[#008fa8] transition">
+                                <button
+                                    onClick={() => navigate(`/accommodation/${item.slug}`)}
+                                    className="rounded-full bg-[#00a7c4] px-8 py-3 text-white font-semibold hover:bg-[#008fa8] transition"
+                                >
                                     View Hotels
                                 </button>
+
                             </div>
 
                         </div>

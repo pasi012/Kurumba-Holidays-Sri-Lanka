@@ -386,7 +386,7 @@ function Home() {
               Discover the Treasure of
             </h1>
 
-            <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wide">
+            <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-semibold tracking-wide">
               Sri Lanka
             </h2>
 
@@ -466,31 +466,62 @@ function Home() {
         </div>
       </section>
 
-      {/* TOURS */}
-      <section className="relative w-full py-10 bg-[#0b5c87] lg:bg-transparent">
-        <div className="flex flex-col lg:flex-row">
+      {/* TOURS SECTION */}
+      <section className="relative w-full bg-[#0b5c87] lg:bg-transparent py-10">
+        <div className="max-w-7xl mx-auto px-4">
 
-          <div className="w-full lg:w-[38%] bg-[#0b5c87] text-white p-10">
-            <h2 className="text-4xl mb-4">TOURS</h2>
-            <p>Discover amazing journeys</p>
-            <div className="flex gap-4 mt-8">
-              <button onClick={() => setCurrent((current - 1 + tourSlides.length) % tourSlides.length)}>‹</button>
-              <button onClick={() => setCurrent((current + 1) % tourSlides.length)}>›</button>
-            </div>
-          </div>
+          <div className="flex flex-col lg:flex-row w-full rounded-2xl overflow-hidden shadow-xl">
 
-          <div className="w-full lg:flex-1 overflow-hidden">
-            <div
-              className="flex transition-transform duration-700"
-              style={{ transform: `translateX(-${current * 100}%)` }}
-            >
-              {tourSlides.map((tour, i) => (
-                <div key={i} className="min-w-full lg:min-w-[60%] p-4">
-                  <img src={tour.image} className="w-full h-[300px] sm:h-[400px] lg:h-[460px] object-cover rounded-xl" />
-                  <h3 className="mt-4 text-xl">{tour.title}</h3>
-                </div>
-              ))}
+            {/* LEFT CONTENT */}
+            <div className="w-full lg:w-[40%] bg-[#0b5c87] text-white p-10 flex flex-col justify-center">
+              <h2 className="text-4xl font-bold mb-4 tracking-wide">TOURS</h2>
+              <p className="text-lg opacity-90">
+                Discover amazing journeys across Sri Lanka with hand-picked tour
+                experiences designed for comfort, culture and adventure.
+              </p>
+
+              <div className="flex gap-4 mt-8">
+                <button
+                  onClick={() =>
+                    setCurrent((current - 1 + tourSlides.length) % tourSlides.length)
+                  }
+                  className="w-12 h-12 flex items-center justify-center rounded-full bg-white text-[#0b5c87] text-2xl font-bold hover:scale-105 transition"
+                >
+                  ‹
+                </button>
+                <button
+                  onClick={() => setCurrent((current + 1) % tourSlides.length)}
+                  className="w-12 h-12 flex items-center justify-center rounded-full bg-white text-[#0b5c87] text-2xl font-bold hover:scale-105 transition"
+                >
+                  ›
+                </button>
+              </div>
             </div>
+
+            {/* RIGHT SLIDER */}
+            <div className="w-full lg:w-[60%] overflow-hidden bg-white">
+              <div
+                className="flex transition-transform duration-700 ease-in-out"
+                style={{ transform: `translateX(-${current * 100}%)` }}
+              >
+                {tourSlides.map((tour, i) => (
+                  <div key={i} className="min-w-full p-6">
+                    <div className="rounded-xl overflow-hidden shadow-lg">
+                      <img
+                        src={tour.image}
+                        alt={tour.title}
+                        className="w-full h-[300px] sm:h-[400px] lg:h-[460px] object-cover"
+                      />
+                    </div>
+
+                    <h3 className="mt-4 text-2xl font-semibold text-gray-800">
+                      {tour.title}
+                    </h3>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -531,11 +562,11 @@ function Home() {
       </section>
 
       {/* ================= OUR EXPERTISE ================= */}
-      <section className="w-full bg-white py-10 overflow-hidden">
+      <section className="w-full bg-white py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
 
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <p className="text-xs tracking-[0.4em] text-gray-400 uppercase mb-4">
               Tailor-made to serve you better
             </p>
@@ -551,56 +582,61 @@ function Home() {
             </div>
           </div>
 
-          {/* Slider */}
-          <div className="relative overflow-hidden">
+          {/* Slider Wrapper */}
+          <div className="relative">
 
-            {/* Track */}
-            <div
-              className="flex transition-transform duration-700 ease-in-out"
-              style={{
-                transform: `translateX(-${expertIndex * slideWidth}%)`,
-              }}
-            >
-              {expertiseSlides.map((card, idx) => (
-                <div
-                  key={idx}
-                  className="min-w-full md:min-w-[33.333%] px-4"
+            {/* Arrow bar */}
+            <div className="flex justify-end mb-6">
+              <div className="flex gap-3">
+                <button
+                  onClick={() =>
+                    setExpertIndex(prev => (prev <= 0 ? maxExpertIndex : prev - 1))
+                  }
+                  className="w-11 h-11 bg-[#0b5c87] text-white rounded-full flex items-center justify-center text-2xl hover:bg-[#094b6f] transition shadow-lg"
                 >
-                  <div className="relative overflow-hidden rounded-xl group shadow-lg">
-                    <img
-                      src={card.image}
-                      alt={card.title}
-                      className="w-full h-[300px] sm:h-[360px] md:h-[420px] lg:h-[520px] object-cover transition duration-700 group-hover:scale-105"
-                    />
+                  ‹
+                </button>
 
-                    <div className="absolute inset-0 bg-black/40" />
-
-                    <h3 className="absolute bottom-6 left-6 text-white text-lg sm:text-xl tracking-wide">
-                      {card.title}
-                    </h3>
-                  </div>
-                </div>
-              ))}
+                <button
+                  onClick={() =>
+                    setExpertIndex(prev => (prev >= maxExpertIndex ? 0 : prev + 1))
+                  }
+                  className="w-11 h-11 bg-[#0b5c87] text-white rounded-full flex items-center justify-center text-2xl hover:bg-[#094b6f] transition shadow-lg"
+                >
+                  ›
+                </button>
+              </div>
             </div>
 
-            {/* Arrows */}
-            <button
-              onClick={() =>
-                setExpertIndex(prev => (prev <= 0 ? maxExpertIndex : prev - 1))
-              }
-              className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-[#0b5c87] text-white rounded-full flex items-center justify-center text-xl hover:bg-[#094b6f] transition shadow-lg z-20"
-            >
-              ‹
-            </button>
+            {/* Slider */}
+            <div className="overflow-hidden">
+              <div
+                className="flex transition-transform duration-700 ease-in-out"
+                style={{
+                  transform: `translateX(-${expertIndex * slideWidth}%)`,
+                }}
+              >
+                {expertiseSlides.map((card, idx) => (
+                  <div key={idx} className="min-w-full md:min-w-[33.333%] px-4">
+                    <div className="relative overflow-hidden rounded-xl group shadow-lg">
 
-            <button
-              onClick={() =>
-                setExpertIndex(prev => (prev >= maxExpertIndex ? 0 : prev + 1))
-              }
-              className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-[#0b5c87] text-white rounded-full flex items-center justify-center text-xl hover:bg-[#094b6f] transition shadow-lg z-20"
-            >
-              ›
-            </button>
+                      <img
+                        src={card.image}
+                        alt={card.title}
+                        className="w-full h-[300px] sm:h-[360px] md:h-[420px] lg:h-[520px] object-cover transition duration-700 group-hover:scale-105"
+                      />
+
+                      <div className="absolute inset-0 bg-black/40" />
+
+                      <h3 className="absolute bottom-6 left-6 text-white text-lg sm:text-xl tracking-wide">
+                        {card.title}
+                      </h3>
+
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
 
           </div>
 

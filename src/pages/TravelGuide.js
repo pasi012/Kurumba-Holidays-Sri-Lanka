@@ -2,12 +2,16 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { useNavigate } from "react-router-dom";
+
 import aboutHero from "../assets/sri-lanka-travel-guide.jpg";
 
 import foodDrinks from "../assets/FoodDrinks.jpg";
 import thingstodo from "../assets/Things-To-Do-In-Sri-Lanka.jpg";
 
 function TravelGuide() {
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
@@ -18,16 +22,20 @@ function TravelGuide() {
         {
             id: 1,
             title: "Food & Drinks",
+            slug: "food-drinks",
             category: "Food & Drinks",
             image: foodDrinks,
-            description: "Sri Lanka is a tropical island, and the food aptly reflects laid-back island vibes, the exotic culture and friendly nature of locals, ever ready to share a meal."
+            description:
+                "Sri Lanka is a tropical island, and the food aptly reflects laid-back island vibes, the exotic culture and friendly nature of locals, ever ready to share a meal."
         },
         {
             id: 2,
             title: "Things to do",
+            slug: "things-to-do",
             category: "Things to do",
             image: thingstodo,
-            description: "From the hilly regions of mid-country to the untouched wonders of the north, and gorgeous beaches along the coast; Sri Lanka is a treasure chest waiting to be discovered."
+            description:
+                "From the hilly regions of mid-country to the untouched wonders of the north, and gorgeous beaches along the coast; Sri Lanka is a treasure chest waiting to be discovered."
         }
     ];
 
@@ -52,7 +60,7 @@ function TravelGuide() {
                 <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
                     <h1
                         data-aos="fade-up"
-                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
                     >
                         Travel Guide
                     </h1>
@@ -115,9 +123,13 @@ function TravelGuide() {
                                     {tour.description}
                                 </p>
 
-                                <button className="rounded-full bg-[#00a7c4] px-8 py-2 text-white font-semibold hover:bg-[#008fa8] transition">
+                                <button
+                                    onClick={() => navigate(`/travel-guide/${tour.slug}`)}
+                                    className="rounded-full bg-[#00a7c4] px-8 py-2 text-white font-semibold hover:bg-[#008fa8] transition"
+                                >
                                     View More
                                 </button>
+
                             </div>
 
                         </div>

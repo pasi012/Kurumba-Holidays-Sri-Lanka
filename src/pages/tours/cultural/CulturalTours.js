@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 
-import aboutHero from "../../../assets/image.png";
+import aboutHero from "../../../assets/gal-wiharaya.jpg";
 
 import culturalHighlightsTour from "../../../assets/temple.jpg";
 import sriLankaHighlightsTour from "../../../assets/Sri Lanka Highlights Tour.jpg";
@@ -35,14 +35,14 @@ function CulturalTours() {
             id: 2,
             title: "Sri Lanka Highlights Tour",
             image: sriLankaHighlightsTour,
-            slug: "sriLanka-highlights-tour",
+            slug: "sri-lanka-highlights-tour",
             description: "Explore the sights and delights of Sri Lanka on this five-day long highlights tour."
         },
         {
             id: 3,
             title: "Special Tours To Sri Lanka",
             image: specialToursToSriLanka,
-            slug: "special-tours-to-srilanka",
+            slug: "special-tours-to-sri-lanka",
             description: "Unique travel packages to help you explore tropical paradise."
         },
         {
@@ -56,14 +56,14 @@ function CulturalTours() {
             id: 5,
             title: "Exotic Sri Lanka",
             image: exoticSriLanka,
-            slug: "exotic-srilanka",
+            slug: "exotic-sri-lanka",
             description: "Our tours of Sri Lanka promise to deliver all that you seek, and more."
         },
         {
             id: 6,
             title: "Sri Lanka at Leisure",
             image: sriLankaatLeisure,
-            slug: "srilanka-at-leisure",
+            slug: "sri-lanka-at-leisure",
             description: "A panoramic tour that leads you to the most iconic spots in Sri Lanka."
         },
         {
@@ -77,7 +77,7 @@ function CulturalTours() {
             id: 8,
             title: "Explore Sri Lanka",
             image: exploreSriLanka,
-            slug: "explore-srilanka",
+            slug: "explore-sri-lanka",
             description: "Delve deeper into Sri Lanka’s culture and discover the island’s rich heritage."
         }
     ];
@@ -94,7 +94,10 @@ function CulturalTours() {
                 <div className="absolute inset-0 bg-black/60" />
 
                 <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
-                    <h1 data-aos="fade-up" className="text-5xl font-extrabold">
+                    <h1
+                        data-aos="fade-up"
+                        className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
+                    >
                         Cultural Tours
                     </h1>
                     <p data-aos="fade-up" data-aos-delay="150" className="mt-6">
@@ -147,9 +150,9 @@ function CulturalTours() {
                                     {tour.description}
                                 </p>
 
-                                <button 
-                                onClick={() => navigate(`/tours/cultural/${tour.slug}`)}
-                                className="rounded-full bg-[#00a7c4] px-8 py-2 text-white font-semibold hover:bg-[#008fa8] transition">
+                                <button
+                                    onClick={() => navigate(`/tours/cultural/${tour.slug}`)}
+                                    className="rounded-full bg-[#00a7c4] px-8 py-2 text-white font-semibold hover:bg-[#008fa8] transition">
                                     View More
                                 </button>
                             </div>

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { useNavigate } from "react-router-dom";
+
 import experienceHero from "../assets/experience-sri-lanka-hero.jpg";
 
 import exploreNature from "../assets/Explore Nature.jpg";
@@ -11,6 +13,8 @@ import wildlifeAdventure from "../assets/Wildlife & Adventure.jpg";
 import religious from "../assets/Religious.jpg";
 
 function Experience() {
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
@@ -23,6 +27,7 @@ function Experience() {
             title: "Explore Nature",
             category: "Explore Nature",
             image: exploreNature,
+            slug: "explore-nature",
             description: "From trekking amidst lush green backdrops to riding the rapids on a thrilling rafting experience, embark on unforgettable island adventures."
         },
         {
@@ -30,6 +35,7 @@ function Experience() {
             title: "Heritage & Culture",
             category: "Heritage & Culture",
             image: heritageCulture,
+            slug: "heritage-culture",
             description: "Set off on a journey back in time as you discover ancient kingdoms and historical destinations that are very much a part of the country’s heritage and culture."
         },
         {
@@ -37,6 +43,7 @@ function Experience() {
             title: "Beaches & Sunsets",
             category: "Beaches & Sunsets",
             image: beachesSunsets,
+            slug: "beaches-sunsets",
             description: "Surrounded by the Indian Ocean, Sri Lanka boasts of white & golden sandy beaches to explore in different parts of the isle each offering distinctive experiences."
         },
         {
@@ -44,6 +51,7 @@ function Experience() {
             title: "Wildlife & Adventure",
             category: "Wildlife & Adventure",
             image: wildlifeAdventure,
+            slug: "wild-life-adventure",
             description: "Embark on an exciting journey into the wild and amidst nature’s tranquillity spot everything from elusive leopards and majestic elephants to colourful avifauna."
         },
         {
@@ -51,6 +59,7 @@ function Experience() {
             title: "Religious",
             category: "Religious",
             image: religious,
+            slug: "religious",
             description: "Embark on an epic journey of discovery and explore marvellous sites of religious significances to Buddhist, Hindu’s, Christians and Muslims that are scattered across the country."
         }
     ];
@@ -76,7 +85,7 @@ function Experience() {
                 <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
                     <h1
                         data-aos="fade-up"
-                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
                     >
                         Experience Sri Lanka
                     </h1>
@@ -143,7 +152,9 @@ function Experience() {
                                     {tour.description}
                                 </p>
 
-                                <button className="rounded-full bg-[#00a7c4] px-8 py-2 text-white font-semibold hover:bg-[#008fa8] transition">
+                                <button
+                                    onClick={() => navigate(`/experience-sri-lanka/${tour.slug}`)}
+                                    className="rounded-full bg-[#00a7c4] px-8 py-2 text-white font-semibold hover:bg-[#008fa8] transition">
                                     View More
                                 </button>
                             </div>

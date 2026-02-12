@@ -73,7 +73,7 @@ function Contact() {
                 <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
                     <h1
                         data-aos="fade-up"
-                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
                     >
                         Contact Us
                     </h1>

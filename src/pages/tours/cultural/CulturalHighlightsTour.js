@@ -1,19 +1,24 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useRef } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import aboutHero from "../../../assets/hero1.jpg";
+import aboutHero from "../../../assets/temple.jpg";
 
 import dhamma from "../../../assets/dambulla.jpg";
 import sigiriya from "../../../assets/sigiriya.jpg";
 import kandy from "../../../assets/kandy.jpg";
 import temple from "../../../assets/temple.jpg";
 
-import related1 from "../../../assets/temple.jpg";
-import related2 from "../../../assets/Sri Lanka Highlights Tour.jpg";
-import related3 from "../../../assets/Special Tours To Sri Lanka.jpg";
+import related1 from "../../../assets/Sri Lanka Highlights Tour.jpg";
+import related2 from "../../../assets/Special Tours To Sri Lanka.jpg";
+import related3 from "../../../assets/Mini Tour Packages.jpg";
+import related4 from "../../../assets/Exotic Sri Lanka.jpg";
+import related5 from "../../../assets/Sri Lanka at Leisure.jpg";
+import related6 from "../../../assets/Pearl Of The Indian Ocean.jpg";
+import related7 from "../../../assets/Explore Sri Lanka.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -22,6 +27,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 function CulturalHighlightsTour() {
+
+    const swiperRef = useRef(null);
 
     const navigate = useNavigate();
 
@@ -51,7 +58,7 @@ function CulturalHighlightsTour() {
                 <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
                     <h1
                         data-aos="fade-up"
-                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
                     >
                         Cultural Highlights Tour
                     </h1>
@@ -66,7 +73,7 @@ function CulturalHighlightsTour() {
             </section>
 
             {/* ================= CULTURAL HIGHLIGHTS ================= */}
-            <section className="bg-white py-10">
+            <section className="bg-white -py-2">
                 <div className="mx-auto max-w-7xl px-6 text-center">
 
                     <p
@@ -86,7 +93,7 @@ function CulturalHighlightsTour() {
                     <div
                         data-aos="fade-up"
                         data-aos-delay="250"
-                        className="mx-auto mt-12 flex max-w-4xl items-center justify-center rounded-md bg-gradient-to-r from-[#0A3A5E] to-[#1C6EA4] py-5 text-white"
+                        className="mx-auto mt-10 flex max-w-4xl items-center justify-center rounded-md bg-gradient-to-r from-[#0A3A5E] to-[#1C6EA4] py-5 text-white"
                     >
                         <div className="flex items-center gap-4">
                             <span className="text-3xl">📅</span>
@@ -101,12 +108,12 @@ function CulturalHighlightsTour() {
                     <div
                         data-aos="zoom-in"
                         data-aos-delay="300"
-                        className="mx-auto mt-16 overflow-hidden rounded-xl shadow-xl"
+                        className="mx-auto mt-10 overflow-hidden rounded-xl shadow-xl"
                     >
                         <img
                             src={selectedImage}
                             alt="Selected Tour"
-                            className="h-[420px] w-full object-cover transition duration-500"
+                            className="h-[420px] w-full object-fill transition duration-500"
                         />
                     </div>
 
@@ -138,7 +145,7 @@ function CulturalHighlightsTour() {
 
                     <h2
                         data-aos="fade-up"
-                        className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+                        className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
                     >
                         Tour Itinerary
                     </h2>
@@ -158,7 +165,7 @@ function CulturalHighlightsTour() {
                             {day1 && (
                                 <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
                                     <p>
-                                        Arrive at the Bandaranaike International Airport where you will be welcomed by a representative of Aitken Spence Travels or a tour guide. After your welcome, begin the journey to the hill capital, Kandy.
+                                        Arrive at the Bandaranaike International Airport where you will be welcomed by a representative of Kurumba Holidays Sri Lanka or a tour guide. After your welcome, begin the journey to the hill capital, Kandy.
                                     </p>
 
                                     <p>
@@ -265,7 +272,7 @@ function CulturalHighlightsTour() {
             </section>
 
             {/* ================= ROUTE MAP ================= */}
-            <section className="bg-white py-10">
+            <section className="bg-white -py-2">
                 <div className="mx-auto max-w-7xl px-6">
 
                     <div
@@ -274,35 +281,33 @@ function CulturalHighlightsTour() {
                     >
                         <h1
                             data-aos="fade-up"
-                            className="mb-6 text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+                            className="mb-6 text-center text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
                         >
                             Route
                         </h1>
 
-                        <div className="map-container overflow-hidden rounded-xl shadow-xl border">
-                            <iframe
-                                width="100%"
-                                height="450"
-                                style={{ border: 0 }}
-                                loading="lazy"
-                                allowFullScreen
-                                src={`https://www.google.com/maps/embed/v1/directions?
-                                    key=AIzaSyD4QeWeF_vtqniw4TNvch34LCFpKpGFIXk
-                                    &origin=Colombo,Sri+Lanka
-                                    &destination=Colombo,Sri+Lanka
-                                    &waypoints=
-                                        Pinnawala+Elephant+Orphanage|
-                                        Temple+of+the+Tooth+Kandy|
-                                        Peradeniya+Botanical+Garden
-                                    &avoid=tolls|highways`
-                                    .replace(/\s+/g, "")}
-                            ></iframe>
+                        <div className="flex flex-col lg:flex-row gap-6">
+
+                            {/* Map */}
+                            <div className="map-container flex-1 overflow-hidden rounded-xl shadow-xl border">
+                                <iframe
+                                    width="100%"
+                                    height="450"
+                                    style={{ border: 0 }}
+                                    loading="lazy"
+                                    allowFullScreen
+                                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBjUk_Sn0lthNO_cpZO9n5hI1lmZPRUB0E&origin=Colombo,Sri+Lanka&destination=Colombo,Sri+Lanka&waypoints=Pinnawala+Elephant+Orphanage|Temple+of+the+Tooth+Kandy|Peradeniya+Botanical+Garden&avoid=tolls|highways"
+                                ></iframe>
+                            </div>
+
+                            {/* Route Info */}
+                            <div className="route-info w-full h-[100px] lg:w-[300px] flex flex-col items-start gap-3 rounded-lg bg-gray-100 p-5 text-lg shadow">
+                                <p><strong>Distance:</strong> 124.4 km</p>
+                                <p><strong>Duration:</strong> 3 hr 51 min</p>
+                            </div>
+
                         </div>
 
-                        <div className="route-info mt-6 flex flex-col items-center gap-3 rounded-lg bg-gray-100 p-5 text-lg shadow">
-                            <p><strong>Distance:</strong> 124.4 km</p>
-                            <p><strong>Duration:</strong> 3 hr 51 min</p>
-                        </div>
                     </div>
 
                 </div>
@@ -363,7 +368,7 @@ function CulturalHighlightsTour() {
                     {/* CTA Box */}
                     <div
                         data-aos="zoom-in"
-                        className="mx-auto mt-16 max-w-5xl rounded-lg bg-gray-100 px-6 py-10 text-center shadow"
+                        className="mt-10 w-full rounded-lg bg-gray-100 px-6 py-10 text-center shadow"
                     >
                         <h2 className="mb-6 text-xl sm:text-2xl font-semibold text-gray-800">
                             Experience your dream holiday in Sri Lanka!
@@ -377,12 +382,12 @@ function CulturalHighlightsTour() {
                     </div>
 
                     {/* Related Destinations */}
-                    <div data-aos="fade-up" className="mt-14 text-center">
+                    <div data-aos="fade-up" className="mt-10 text-left">
                         <h3 className="mb-6 text-xl font-bold text-gray-700">
                             RELATED DESTINATIONS
                         </h3>
 
-                        <div className="flex flex-wrap justify-center gap-3">
+                        <div className="flex flex-wrap justify-start gap-3">
                             {["Anuradhapura", "Polonnaruwa", "Horton Plains", "Sinharaja", "Negombo"].map((place, i) => (
                                 <span
                                     key={i}
@@ -397,20 +402,37 @@ function CulturalHighlightsTour() {
                 </div>
             </section>
 
-            {/* ================= RELATED TOURS (SLIDER) ================= */}
-            <section className="bg-white py-14">
+            {/* ================= RELATED TOURS ================= */}
+            <section className="bg-white py-5">
                 <div className="mx-auto max-w-7xl px-6">
 
-                    {/* Heading */}
-                    <div data-aos="fade-up" className="mb-10 text-center">
+                    <div className="mb-5 flex items-center justify-between" data-aos="fade-up">
+                        {/* Heading */}
                         <h2 className="text-3xl sm:text-4xl font-extrabold tracking-wide text-gray-800">
                             RELATED TOURS
                         </h2>
+
+                        {/* Slider Arrows */}
+                        <div className="flex gap-3">
+                            <button
+                                onClick={() => swiperRef.current.slidePrev()}
+                                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 transition hover:bg-[#083A5E] hover:text-white"
+                            >
+                                ‹
+                            </button>
+
+                            <button
+                                onClick={() => swiperRef.current.slideNext()}
+                                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#00A9C7] text-white transition hover:bg-[#008eaa]"
+                            >
+                                ›
+                            </button>
+                        </div>
                     </div>
 
                     <Swiper
                         modules={[Navigation, Autoplay]}
-                        navigation
+                        onSwiper={(swiper) => (swiperRef.current = swiper)}
                         autoplay={{
                             delay: 3500,
                             disableOnInteraction: false,
@@ -422,7 +444,6 @@ function CulturalHighlightsTour() {
                             640: { slidesPerView: 2 },
                             1024: { slidesPerView: 3 },
                         }}
-                        className="pb-10"
                     >
 
                         {/* Slide 1 */}
@@ -431,7 +452,7 @@ function CulturalHighlightsTour() {
                                 <div className="relative h-[260px] overflow-hidden">
                                     <img
                                         src={related1}
-                                        alt="Sri Lanka Highlights Tour"
+                                        alt="Special Tours To Sri Lanka"
                                         className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
                                     />
                                 </div>
@@ -440,7 +461,9 @@ function CulturalHighlightsTour() {
                                     <h3 className="mb-4 text-lg font-semibold text-white">
                                         Sri Lanka Highlights Tour
                                     </h3>
-                                    <button className="border-b-2 border-[#00A9C7] pb-1 text-sm uppercase tracking-widest text-[#00A9C7] hover:text-white">
+                                    <button
+                                        onClick={() => navigate(`/tours/cultural/sri-lanka-highlights-tour`)}
+                                        className="border-b-2 border-[#00A9C7] pb-1 text-sm uppercase tracking-widest text-[#00A9C7] hover:text-white">
                                         View Details
                                     </button>
                                 </div>
@@ -453,7 +476,7 @@ function CulturalHighlightsTour() {
                                 <div className="relative h-[260px] overflow-hidden">
                                     <img
                                         src={related2}
-                                        alt="Special Tours To Sri Lanka"
+                                        alt="Mini Tour Packages"
                                         className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
                                     />
                                 </div>
@@ -462,7 +485,9 @@ function CulturalHighlightsTour() {
                                     <h3 className="mb-4 text-lg font-semibold text-white">
                                         Special Tours To Sri Lanka
                                     </h3>
-                                    <button className="border-b-2 border-[#00A9C7] pb-1 text-sm uppercase tracking-widest text-[#00A9C7] hover:text-white">
+                                    <button
+                                        onClick={() => navigate(`/tours/cultural/special-tours-to-sri-lanka`)}
+                                        className="border-b-2 border-[#00A9C7] pb-1 text-sm uppercase tracking-widest text-[#00A9C7] hover:text-white">
                                         View Details
                                     </button>
                                 </div>
@@ -475,7 +500,7 @@ function CulturalHighlightsTour() {
                                 <div className="relative h-[260px] overflow-hidden">
                                     <img
                                         src={related3}
-                                        alt="Mini Tour Packages"
+                                        alt="Sri Lanka Highlights Tour"
                                         className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
                                     />
                                 </div>
@@ -484,7 +509,105 @@ function CulturalHighlightsTour() {
                                     <h3 className="mb-4 text-lg font-semibold text-white">
                                         Mini Tour Packages
                                     </h3>
-                                    <button className="border-b-2 border-[#00A9C7] pb-1 text-sm uppercase tracking-widest text-[#00A9C7] hover:text-white">
+                                    <button
+                                        onClick={() => navigate(`/tours/cultural/mini-tour-packages`)}
+                                        className="border-b-2 border-[#00A9C7] pb-1 text-sm uppercase tracking-widest text-[#00A9C7] hover:text-white">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        {/* Slide 4 */}
+                        <SwiperSlide>
+                            <div className="group overflow-hidden rounded-xl shadow-lg">
+                                <div className="relative h-[260px] overflow-hidden">
+                                    <img
+                                        src={related4}
+                                        alt="Sri Lanka Highlights Tour"
+                                        className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                                    />
+                                </div>
+
+                                <div className="bg-[#083A5E] p-6 text-center">
+                                    <h3 className="mb-4 text-lg font-semibold text-white">
+                                        Exotic Sri Lanka
+                                    </h3>
+                                    <button
+                                        onClick={() => navigate(`/tours/cultural/exotic-sri-lanka`)}
+                                        className="border-b-2 border-[#00A9C7] pb-1 text-sm uppercase tracking-widest text-[#00A9C7] hover:text-white">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        {/* Slide 5 */}
+                        <SwiperSlide>
+                            <div className="group overflow-hidden rounded-xl shadow-lg">
+                                <div className="relative h-[260px] overflow-hidden">
+                                    <img
+                                        src={related5}
+                                        alt="Sri Lanka Highlights Tour"
+                                        className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                                    />
+                                </div>
+
+                                <div className="bg-[#083A5E] p-6 text-center">
+                                    <h3 className="mb-4 text-lg font-semibold text-white">
+                                        Sri Lanka at Leisure
+                                    </h3>
+                                    <button
+                                        onClick={() => navigate(`/tours/cultural/sri-lanka-at-leisure`)}
+                                        className="border-b-2 border-[#00A9C7] pb-1 text-sm uppercase tracking-widest text-[#00A9C7] hover:text-white">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        {/* Slide 6 */}
+                        <SwiperSlide>
+                            <div className="group overflow-hidden rounded-xl shadow-lg">
+                                <div className="relative h-[260px] overflow-hidden">
+                                    <img
+                                        src={related6}
+                                        alt="Sri Lanka Highlights Tour"
+                                        className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                                    />
+                                </div>
+
+                                <div className="bg-[#083A5E] p-6 text-center">
+                                    <h3 className="mb-4 text-lg font-semibold text-white">
+                                        Pearl Of The Indian Ocean
+                                    </h3>
+                                    <button
+                                        onClick={() => navigate(`/tours/cultural/pearl-of-the-indian-ocean`)}
+                                        className="border-b-2 border-[#00A9C7] pb-1 text-sm uppercase tracking-widest text-[#00A9C7] hover:text-white">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        {/* Slide 7 */}
+                        <SwiperSlide>
+                            <div className="group overflow-hidden rounded-xl shadow-lg">
+                                <div className="relative h-[260px] overflow-hidden">
+                                    <img
+                                        src={related7}
+                                        alt="Sri Lanka Highlights Tour"
+                                        className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                                    />
+                                </div>
+
+                                <div className="bg-[#083A5E] p-6 text-center">
+                                    <h3 className="mb-4 text-lg font-semibold text-white">
+                                        Explore Sri Lanka
+                                    </h3>
+                                    <button
+                                        onClick={() => navigate(`/tours/cultural/explore-sri-lanka`)}
+                                        className="border-b-2 border-[#00A9C7] pb-1 text-sm uppercase tracking-widest text-[#00A9C7] hover:text-white">
                                         View Details
                                     </button>
                                 </div>
