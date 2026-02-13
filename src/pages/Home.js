@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { useNavigate } from "react-router-dom";
+
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -15,13 +17,20 @@ import tour1 from "../assets/tour1.jpg";
 import tour2 from "../assets/tour2.jpg";
 import tour3 from "../assets/tour3.jpg";
 
-import expert1 from "../assets/Surfing.png";
-import expert2 from "../assets/colomboKithulgala1.jpg";
-import expert3 from "../assets/ella.jpg";
+import mice from "../assets/mice.jpg";
+import transportation from "../assets/Transportation.jpg";
+import aircraftHandling from "../assets/Aircraft handling.jpg";
+import sportsTours from "../assets/Sports Tours.jpg";
+import excursions from "../assets/Excursions1.jpg";
+import natureandadventure from "../assets/Wilpattu National Park1.jpg";
+import wellness from "../assets/Wellness.jpeg";
+import shoreExcursion from "../assets/Shore-Excursion.jpg";
 
 import ReCAPTCHA from "react-google-recaptcha";
 
 function Home() {
+
+  const navigate = useNavigate();
 
   const [captcha, setCaptcha] = useState(null);
 
@@ -297,10 +306,46 @@ function Home() {
   }, []);
 
   const expertiseSlides = [
-    { image: expert1, title: "Nature And Adventure" },
-    { image: expert2, title: "Wellness" },
-    { image: expert3, title: "Shore Excursion" },
-    { image: expert3, title: "Shore Excursion" },
+    {
+      title: "MICE",
+      slug: "mice",
+      image: mice,
+    },
+    {
+      title: "Transportation",
+      slug: "transportation",
+      image: transportation,
+    },
+    {
+      title: "Aircraft Handling",
+      slug: "aircraft-handling",
+      image: aircraftHandling,
+    },
+    {
+      title: "Sports Tours",
+      slug: "sports-tours",
+      image: sportsTours,
+    },
+    {
+      title: "Excursions",
+      slug: "excursions",
+      image: excursions,
+    },
+    {
+      title: "Nature & Adventure",
+      slug: "nature-and-adventure",
+      image: natureandadventure,
+    },
+    {
+      title: "Wellness",
+      slug: "wellness",
+      image: wellness,
+    },
+    {
+      title: "Shore Excursion",
+      slug: "shore-excursion",
+      image: shoreExcursion,
+    },
   ];
 
   const [expertIndex, setExpertIndex] = useState(0);
@@ -562,7 +607,7 @@ function Home() {
       </section>
 
       {/* ================= OUR EXPERTISE ================= */}
-      <section className="w-full bg-white py-20 overflow-hidden">
+      <section className="w-full bg-white py-10 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
 
           {/* Header */}
@@ -618,12 +663,15 @@ function Home() {
               >
                 {expertiseSlides.map((card, idx) => (
                   <div key={idx} className="min-w-full md:min-w-[33.333%] px-4">
-                    <div className="relative overflow-hidden rounded-xl group shadow-lg">
+                    <div
+                      onClick={() => navigate(`/expertise/${card.slug}`)}
+                      className="relative overflow-hidden rounded-xl group shadow-lg"
+                    >
 
                       <img
                         src={card.image}
                         alt={card.title}
-                        className="w-full h-[300px] sm:h-[360px] md:h-[420px] lg:h-[520px] object-cover transition duration-700 group-hover:scale-105"
+                        className="w-full h-[300px] sm:h-[360px] md:h-[420px] lg:h-[420px] object-fill transition duration-700 group-hover:scale-105"
                       />
 
                       <div className="absolute inset-0 bg-black/40" />

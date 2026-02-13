@@ -57,7 +57,7 @@ function ExploreNature() {
                             Explore Nature
                         </h2>
                         <p data-aos="fade-up" data-aos-delay="100" className="mt-3 text-gray-600">
-                            Observe the intricacies of tea making or better yet, why not savour a cup of Ceylon Tea? For something more action-packed, visit Kitulgala where the pastime of white water rafting can be enjoyed. Experience thrilling adventure tours in Sri Lanka and the chance to explore this magical island with Aitken Spence Travels.
+                            Observe the intricacies of tea making or better yet, why not savour a cup of Ceylon Tea? For something more action-packed, visit Kitulgala where the pastime of white water rafting can be enjoyed. Experience thrilling adventure tours in Sri Lanka and the chance to explore this magical island with Kurumba Holidays Sri Lanka.
                         </p>
                     </div>
 

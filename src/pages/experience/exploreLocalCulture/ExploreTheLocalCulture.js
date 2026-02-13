@@ -59,7 +59,7 @@ function ExploreTheLocalCulture() {
                             Explore the Local Culture
                         </h2>
                         <p data-aos="fade-up" data-aos-delay="100" className="mt-3 text-gray-600">
-                            Discover the rich culture of Sri Lanka with Aitken Spence Travels as you journey to historical destinations that showcase the gems of the island’s glorious past. On your adventures you will visit famed archaeological sites, magnificent monuments and stunning landmarks that offer an insight into what life was like back in the days of the ancient kings.
+                            Discover the rich culture of Sri Lanka with Kurumba Holidays Sri Lanka as you journey to historical destinations that showcase the gems of the island’s glorious past. On your adventures you will visit famed archaeological sites, magnificent monuments and stunning landmarks that offer an insight into what life was like back in the days of the ancient kings.
                         </p>
                     </div>
 

@@ -35,8 +35,6 @@ function TourInTheHills() {
     const [day5, setDay5] = useState(false);
     const [day6, setDay6] = useState(false);
     const [day7, setDay7] = useState(false);
-    const [day8, setDay8] = useState(false);
-    const [day9, setDay9] = useState(false);
 
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
@@ -79,7 +77,7 @@ function TourInTheHills() {
                         data-aos-delay="150"
                         className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
                     >
-                        Set off on a hill country tour with Aitken Spence Travels to visit breathtakingly lush tea estates and cultural highlights such as the Temple of the Tooth that is sure to mesmerise you. From the last royal capital of Sri Lanka to a town in the mountains known as “Little England”, discover the awe-inspiring beauty of the region which has its own unique old world charm.
+                        Set off on a hill country tour with Kurumba Holidays Sri Lanka to visit breathtakingly lush tea estates and cultural highlights such as the Temple of the Tooth that is sure to mesmerise you. From the last royal capital of Sri Lanka to a town in the mountains known as “Little England”, discover the awe-inspiring beauty of the region which has its own unique old world charm.
                     </p>
 
                     {/* Duration Bar */}
@@ -159,7 +157,7 @@ function TourInTheHills() {
                                 <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
 
                                     <p>
-                                        On arrival at the airport an Aitken Spence Travels representative will be there to greet you. From there you will begin your journey to Kandy.
+                                        On arrival at the airport an Kurumba Holidays Sri Lanka representative will be there to greet you. From there you will begin your journey to Kandy.
                                     </p>
 
                                     <p>

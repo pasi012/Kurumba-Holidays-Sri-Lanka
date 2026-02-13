@@ -14,6 +14,7 @@ import excursions from "../assets/Excursions1.jpg";
 import natureandadventure from "../assets/Wilpattu National Park1.jpg";
 import wellness from "../assets/Wellness.jpeg";
 import shoreExcursion from "../assets/Shore-Excursion.jpg";
+import gemsJewellery from "../assets/gems-jewellery.jpg";
 
 function Expertise() {
 
@@ -83,6 +84,14 @@ function Expertise() {
         },
         {
             id: 8,
+            title: "Gems & Jewellery",
+            slug: "gems-and-jewellery",
+            category: "Gems & Jewellery",
+            image: gemsJewellery,
+            description: "Explore Sri Lanka’s world-renowned gems and jewellery industry. Visit sapphire mines, gem museums, and certified jewellery boutiques, and even design your own custom-made jewellery with expert craftsmen."
+        },
+        {
+            id: 9,
             title: "Shore Excursion",
             slug: "shore-excursion",
             category: "Shore Excursion",
@@ -90,7 +99,6 @@ function Expertise() {
             description: "Explore Sri Lanka in style with our luxury shore excursions."
         }
     ];
-
 
     const [category, setCategory] = useState("All");
 
@@ -140,6 +148,7 @@ function Expertise() {
                         <option value="Nature and adventure">Nature and adventure</option>
                         <option value="Wellness">Wellness</option>
                         <option value="Shore Excursion">Shore Excursion</option>
+                        <option value="Gems & Jewellery">Gems & Jewellery</option>
                     </select>
                 </div>
             </section>
@@ -183,7 +192,7 @@ function Expertise() {
                                 >
                                     View More
                                 </button>
-                                
+
                             </div>
 
                         </div>

@@ -31,7 +31,7 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const whatsappNumber = "94774341291"; // Your Kurumba Holidays WhatsApp
+        const whatsappNumber = "94743412910"; // Your Kurumba Holidays WhatsApp
 
         const text = `
             New Tour Inquiry 🌴
@@ -510,7 +510,7 @@ function Contact() {
                     <div data-aos="fade-right" className="w-full h-[500px] rounded-xl overflow-hidden shadow-lg">
                         <iframe
                             title="Kurumba Holidays Location"
-                            src="https://www.google.com/maps?q=Kurumba%20Holidays%20Sri%20Lanka&output=embed"
+                            src="https://www.google.com/maps?q=384/121%20Wakwella%20Road%2C%20Galle%2080000%2C%20Sri%20Lanka&output=embed"
                             className="w-full h-full border-0"
                             allowFullScreen
                             loading="lazy"
@@ -530,8 +530,8 @@ function Contact() {
                             <div>
                                 <p className="text-sm font-semibold text-gray-500 mb-1">ADDRESS</p>
                                 <p>
-                                    No. 25, Kurumba Road,<br />
-                                    Colombo 03,<br />
+                                    No. 384/121, Wakwella Road,<br />
+                                    Galle,<br />
                                     Sri Lanka.
                                 </p>
                             </div>
@@ -540,8 +540,8 @@ function Contact() {
                             <div>
                                 <p className="text-sm font-semibold text-gray-500 mb-1">PHONE</p>
                                 <p>
-                                    +94 77 434 1291 <br />
-                                    +94 71 220 4587
+                                    +94 74 341 2910 <br />
+                                    +94 77 062 4272
                                 </p>
                             </div>
 
@@ -549,7 +549,7 @@ function Contact() {
                             <div>
                                 <p className="text-sm font-semibold text-gray-500 mb-1">EMAIL</p>
                                 <p className="text-[#0b4c7d] font-medium">
-                                    info@kurumbaholidays.lk
+                                    kurumbaholidays@gmail.com
                                 </p>
                             </div>
 

@@ -25,6 +25,7 @@ export default function Navbar() {
   const moreLinks = [
     ["TRAVEL GUIDE", "/travel-guide"],
     ["OUR EXPERTISE", "/expertise"],
+    ["PROPERTY SELLING & BUYING", "/property-buying-and-selling"],
     ["TRAVEL NEWS", "https://srilankatravelnews.wordpress.com"],
   ];
 
@@ -125,6 +126,7 @@ export default function Navbar() {
               ["OUR EXPERTISE", "/expertise"],
               ["TRAVEL GUIDE", "/travel-guide"],
               ["ACCOMMODATION", "/accommodation"],
+              ["PROPERTY SELLING & BUYING", "/property-buying-and-selling"],
               ["TRAVEL NEWS", "https://srilankatravelnews.wordpress.com"],
             ].map(([label, path]) => (
               <li key={label}>

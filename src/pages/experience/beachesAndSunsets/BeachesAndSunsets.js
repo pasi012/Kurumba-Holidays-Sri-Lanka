@@ -57,7 +57,7 @@ function BeachesAndSunsets() {
                             Explore Sri Lanka’s Beaches
                         </h2>
                         <p data-aos="fade-up" data-aos-delay="100" className="mt-3 text-gray-600">
-                            Boasting year-round sunshine and breathtaking sceneries, beach holidays in Sri Lanka offer a laidback coastal escape. Those on a getaway with Aitken Spence Travels can enjoy lazing on soft sandy beaches, get the perfect tan, delight in magical sunsets and the thrills of water sports; a perfect holiday be it with the whole family or that special someone.
+                            Boasting year-round sunshine and breathtaking sceneries, beach holidays in Sri Lanka offer a laidback coastal escape. Those on a getaway with Kurumba Holidays Sri Lanka can enjoy lazing on soft sandy beaches, get the perfect tan, delight in magical sunsets and the thrills of water sports; a perfect holiday be it with the whole family or that special someone.
                         </p>
                     </div>
 

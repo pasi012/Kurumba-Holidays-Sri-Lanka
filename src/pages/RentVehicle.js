@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -6,6 +6,40 @@ import experienceHero from "../assets/car-rent.jpg";
 import VehicleGallery from "../components/VehicleGallery";
 
 function RentVehicle() {
+
+    const [showForm, setShowForm] = useState(false);
+
+    const [booking, setBooking] = useState({
+        vehicle: "",
+        pickupDate: "",
+        returnDate: "",
+        pickupPlace: "",
+        dropPlace: ""
+    });
+
+    const handleChange = (e) => {
+        setBooking({ ...booking, [e.target.name]: e.target.value });
+    };
+
+    const sendWhatsApp = () => {
+        const phone = "94743412910";
+
+        const message = `
+        🚗 *Vehicle Rental Booking*
+
+        🚗 Vehicle Type: ${booking.vehicle}
+        📅 Pickup Date: ${booking.pickupDate}
+        📅 Return Date: ${booking.returnDate}
+        📍 Pickup Location: ${booking.pickupPlace}
+        📍 Drop-off Location: ${booking.dropPlace}
+
+        Please confirm availability and price.
+            `;
+
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+        setShowForm(false);
+    };
 
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
@@ -126,13 +160,15 @@ function RentVehicle() {
                         Pickup or delivery available anywhere in Sri Lanka.
                     </p>
 
-                    <button className="bg-[#00a6cf] text-white px-10 py-3 rounded-full font-semibold hover:bg-[#008db0] transition">
+                    <button
+                        onClick={() => setShowForm(true)}
+                        className="bg-[#00a6cf] text-white px-10 py-3 rounded-full font-semibold hover:bg-[#008db0] transition">
                         BOOK NOW
                     </button>
 
                     <div className="mt-6 text-[#00a6cf] space-y-1">
-                        <p>Email: rentals@yourdomain.lk</p>
-                        <p>Phone: +94 76 543 7676</p>
+                        <p>Email: kurumbaholidays@gmail.com</p>
+                        <p>Phone: +94 74 341 2910</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12 mt-16">
@@ -170,6 +206,101 @@ function RentVehicle() {
                         <p>◆ <strong>Do you deliver vehicles?</strong><br />
                             Yes, airport, hotel, and city delivery services are available.</p>
                     </div>
+
+                    {showForm && (
+                        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4">
+                            <div className="bg-white rounded-xl p-6 max-w-md w-full space-y-4">
+                                <h2 className="text-xl font-bold text-center mb-2">
+                                    Vehicle Booking
+                                </h2>
+
+                                {/* Vehicle Type */}
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
+                                        🚗 Vehicle Type
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="vehicle"
+                                        placeholder="Car, Van, Scooter..."
+                                        onChange={handleChange}
+                                        className="w-full border p-2 rounded"
+                                    />
+                                </div>
+
+                                {/* Pickup Date */}
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
+                                        📅 Pickup Date
+                                    </label>
+                                    <input
+                                        type="date"
+                                        name="pickupDate"
+                                        onChange={handleChange}
+                                        className="w-full border p-2 rounded"
+                                    />
+                                </div>
+
+                                {/* Return Date */}
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
+                                        📅 Return Date
+                                    </label>
+                                    <input
+                                        type="date"
+                                        name="returnDate"
+                                        onChange={handleChange}
+                                        className="w-full border p-2 rounded"
+                                    />
+                                </div>
+
+                                {/* Pickup Location */}
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
+                                        📍 Pickup Location
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="pickupPlace"
+                                        placeholder="Hotel, Airport, City..."
+                                        onChange={handleChange}
+                                        className="w-full border p-2 rounded"
+                                    />
+                                </div>
+
+                                {/* Drop-off Location */}
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
+                                        📍 Drop-off Location
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="dropPlace"
+                                        placeholder="Hotel, Airport, City..."
+                                        onChange={handleChange}
+                                        className="w-full border p-2 rounded"
+                                    />
+                                </div>
+
+                                {/* Buttons */}
+                                <div className="flex gap-3 pt-3">
+                                    <button
+                                        onClick={() => setShowForm(false)}
+                                        className="w-1/2 border py-2 rounded"
+                                    >
+                                        Cancel
+                                    </button>
+
+                                    <button
+                                        onClick={sendWhatsApp}
+                                        className="w-1/2 bg-green-500 text-white py-2 rounded"
+                                    >
+                                        Send WhatsApp
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
 
                 </div>
             </section>

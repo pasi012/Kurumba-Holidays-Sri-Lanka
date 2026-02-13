@@ -42,7 +42,7 @@ function Footer() {
 
               <div className="flex items-start justify-center gap-3 lg:justify-start">
                 <Phone size={16} className="mt-[2px]" />
-                <span>074 341 2910</span>
+                <span>+94 74 341 2910</span>
               </div>
 
               <div className="flex items-start justify-center gap-3 lg:justify-start">

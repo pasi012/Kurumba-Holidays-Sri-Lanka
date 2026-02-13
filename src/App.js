@@ -77,6 +77,12 @@ import Excursions from "./pages/expertise/Excursions";
 import NatureAndAdventure from "./pages/expertise/NatureAndAdventure";
 import Wellness from "./pages/expertise/Wellness";
 import ShoreExcursion from "./pages/expertise/ShoreExcursion";
+import PropertyBuyingAndSelling from "./pages/PropertyBuyingAndSelling";
+import GemsAndJewellery from "./pages/expertise/GemsAndJewellery";
+import Romantic from "./pages/tours/romantic/Romantic";
+import WeddingSriLanka from "./pages/tours/romantic/WeddingSriLanka";
+import HoneymoonTours from "./pages/tours/romantic/HoneymoonTours";
+import RomanticEscape from "./pages/tours/romantic/RomanticEscape";
 
 function App() {
     return (
@@ -96,6 +102,7 @@ function App() {
                 <Route path="/expertise" element={<Expertise />} />
                 <Route path="/travel-guide" element={<TravelGuide />} />
                 <Route path="/accommodation" element={<Accommodation />} />
+                <Route path="/property-buying-and-selling" element={<PropertyBuyingAndSelling />} />
 
                 {/* tours/cultural */}
                 <Route path="/tours/cultural" element={<CulturalTours />} />
@@ -113,6 +120,12 @@ function App() {
                 <Route path="/tours/hill-country/culture-hill-country-and-wild-life-tour" element={<CultureHillCountryAndWildLifeTour />} />
                 <Route path="/tours/hill-country/sri-lanka-hill-country-tour-3-days" element={<SriLankaHillCountryTour />} />
                 <Route path="/tours/hill-country/tour-in-the-hills" element={<TourInTheHills />} />
+
+                {/* tours/romantic */}
+                <Route path="/tours/romantic" element={<Romantic />} />
+                <Route path="/tours/romantic/wedding-in-sri-lanka" element={<WeddingSriLanka />} />
+                <Route path="/tours/romantic/honeymoon-tours" element={<HoneymoonTours />} />
+                <Route path="/tours/romantic/romantic-escape" element={<RomanticEscape />} />
 
                 {/* experience-sri-lanka */}
                 <Route path="/experience-sri-lanka/explore-nature" element={<ExploreNature />} />
@@ -175,6 +188,7 @@ function App() {
                 <Route path="/expertise/nature-and-adventure" element={<NatureAndAdventure />} />
                 <Route path="/expertise/wellness" element={<Wellness />} />
                 <Route path="/expertise/shore-excursion" element={<ShoreExcursion />} />
+                <Route path="/expertise/gems-and-jewellery" element={<GemsAndJewellery />} />
 
             </Routes>
             <Footer />

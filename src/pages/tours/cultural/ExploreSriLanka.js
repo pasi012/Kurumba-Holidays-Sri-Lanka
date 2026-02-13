@@ -85,7 +85,7 @@ function ExploreSriLanka() {
                         data-aos-delay="150"
                         className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
                     >
-                        The Sri Lankan culture you see today is a product of 30,000 years of history and is very much interlinked with the lives and traditions of the local people. Join Aitken Spence Travels, one of the leading tour agents in Sri Lanka as you learn more about this heritage; visit ancient kingdoms, explore breathtaking natural landscapes and even have the chance to get up close to gentle giants of the wild!
+                        The Sri Lankan culture you see today is a product of 30,000 years of history and is very much interlinked with the lives and traditions of the local people. Join Kurumba Holidays Sri Lanka, one of the leading tour agents in Sri Lanka as you learn more about this heritage; visit ancient kingdoms, explore breathtaking natural landscapes and even have the chance to get up close to gentle giants of the wild!
                     </p>
 
                     {/* Duration Bar */}
@@ -164,7 +164,7 @@ function ExploreSriLanka() {
                             {day1 && (
                                 <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
                                     <p>
-                                        On arrival, you will be met by an Aitken Spence Travels representative, following which, begin your journey to Kandalama via Pinnawala.
+                                        On arrival, you will be met by an Kurumba Holidays Sri Lanka representative, following which, begin your journey to Kandalama via Pinnawala.
                                     </p>
 
                                     <p>

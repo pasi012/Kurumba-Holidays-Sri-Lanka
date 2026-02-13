@@ -89,7 +89,7 @@ function SriLankaAtLeisure() {
                         data-aos-delay="150"
                         className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
                     >
-                        Soak up the island’s magical charm as we, at Aitken Spence Travels whisk you away on some truly memorable Sri Lanka leisure tours. Enjoy visits to heritage sites marked by the legacies of ancient kings and treks in the cool climes of the island’s hill country. Set off on exciting wildlife safaris at some of the best nature reserves on the island, home to an abundance of wildlife including large herds of jumbos and elusive leopards.
+                        Soak up the island’s magical charm as we, at Kurumba Holidays Sri Lanka whisk you away on some truly memorable Sri Lanka leisure tours. Enjoy visits to heritage sites marked by the legacies of ancient kings and treks in the cool climes of the island’s hill country. Set off on exciting wildlife safaris at some of the best nature reserves on the island, home to an abundance of wildlife including large herds of jumbos and elusive leopards.
                     </p>
 
                     {/* Duration Bar */}

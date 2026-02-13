@@ -281,7 +281,7 @@ function SpecialToursToSriLanka() {
                                 <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
 
                                     <p>
-                                        Totalling 147 acres, the Royal Botanical Gardens in Peradeniya will prove to be an excellent venue in which to spend time exploring its carefully tended leafy treasures. Home to many plants, flowers, and spices, the gardens are managed by the Division of National Botanic Gardens and continues to attract hordes of visitors throughout the year. Join Aitken Spence Travels and traverse through the modern -day Garden of Eden.
+                                        Totalling 147 acres, the Royal Botanical Gardens in Peradeniya will prove to be an excellent venue in which to spend time exploring its carefully tended leafy treasures. Home to many plants, flowers, and spices, the gardens are managed by the Division of National Botanic Gardens and continues to attract hordes of visitors throughout the year. Join Kurumba Holidays Sri Lanka and traverse through the modern -day Garden of Eden.
                                     </p>
 
                                     <p>
