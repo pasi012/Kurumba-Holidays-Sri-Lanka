@@ -60,7 +60,6 @@ import Yala from "./pages/experience/wildlifeAndAdventure/YalaNationalPark";
 import Udawalawe from "./pages/experience/wildlifeAndAdventure/UdawalawaNationalPark";
 import Minneriya from "./pages/experience/wildlifeAndAdventure/MinneriyaNationalPark";
 import Religious from "./pages/experience/religious/Religious";
-import RamayanaTrails from "./pages/experience/religious/RamayanaTrails";
 import JosephVaz from "./pages/experience/religious/JosephVaz";
 import LuxuryBeachResorts from "./pages/accommodation/LuxuryBeachResorts";
 import BoutiqueHotels from "./pages/accommodation/BoutiqueHotels";
@@ -83,6 +82,26 @@ import Romantic from "./pages/tours/romantic/Romantic";
 import WeddingSriLanka from "./pages/tours/romantic/WeddingSriLanka";
 import HoneymoonTours from "./pages/tours/romantic/HoneymoonTours";
 import RomanticEscape from "./pages/tours/romantic/RomanticEscape";
+import AyurvedaWellness from "./pages/tours/ayurvedawellness/AyurvedaWellness";
+import AyurvedicHealingRetreats from "./pages/tours/ayurvedawellness/AyurvedicHealingRetreats";
+import Meditation from "./pages/tours/ayurvedawellness/Meditation";
+import Yoga from "./pages/tours/ayurvedawellness/Yoga";
+import Beach from "./pages/tours/beach/Beach";
+import ExploreEnchantingSrilanka from "./pages/tours/beach/ExploreEnchantingSrilanka";
+import BeachHoppingAdventures from "./pages/tours/beach/BeachHoppingAdventures";
+import SunAndFunTuryaa from "./pages/tours/beach/SunAndFunTuryaa";
+import SpecialInterestTours from "./pages/tours/specialinteresttours.js/SpecialInterestTours";
+import WalkingTours from "./pages/tours/specialinteresttours.js/WalkingTours";
+import CookingByColours from "./pages/tours/specialinteresttours.js/CookingByColours";
+import BawaTours from "./pages/tours/specialinteresttours.js/BawaTours";
+import FeminaTour from "./pages/tours/specialinteresttours.js/FeminaTour";
+import SeatInCoachTours from "./pages/tours/SeatInCoachTours";
+import RamayanaTrails from "./pages/tours/ramayanatrails/RamayanaTrails";
+import NatureTours from "./pages/tours/natureTours/NatureTours";
+import WildLifeTour from "./pages/tours/natureTours/WildLifeTour";
+import CyclingTours from "./pages/tours/natureTours/CyclingTours";
+import AdventureTours from "./pages/tours/natureTours/AdventureTours";
+import WalkingTour from "./pages/tours/natureTours/WalkingTours";
 
 function App() {
     return (
@@ -126,6 +145,38 @@ function App() {
                 <Route path="/tours/romantic/wedding-in-sri-lanka" element={<WeddingSriLanka />} />
                 <Route path="/tours/romantic/honeymoon-tours" element={<HoneymoonTours />} />
                 <Route path="/tours/romantic/romantic-escape" element={<RomanticEscape />} />
+
+                {/* tours/AyurvedaWellness */}
+                <Route path="/tours/ayurveda-wellness" element={<AyurvedaWellness />} />
+                <Route path="/tours/ayurveda-wellness/ayurvedic-healing-retreats" element={<AyurvedicHealingRetreats />} />
+                <Route path="/tours/ayurveda-wellness/meditation" element={<Meditation />} />
+                <Route path="/tours/ayurveda-wellness/yoga" element={<Yoga />} />
+
+                {/* tours/beach */}
+                <Route path="/tours/beach" element={<Beach />} />
+                <Route path="/tours/beach/explore-enchanting-srilanka" element={<ExploreEnchantingSrilanka />} />
+                <Route path="/tours/beach/beach-hopping-adventures" element={<BeachHoppingAdventures />} />
+                <Route path="/tours/beach/sun-and-fun-at-turyaa-kalutara" element={<SunAndFunTuryaa />} />
+
+                {/* tours/special-interest-tours */}
+                <Route path="/tours/special-interest-tours" element={<SpecialInterestTours />} />
+                <Route path="/tours/special-interest-tours/walking-tours" element={<WalkingTours />} />
+                <Route path="/tours/special-interest-tours/bawa-tour" element={<BawaTours />} />
+                <Route path="/tours/special-interest-tours/cooking-by-colours" element={<CookingByColours />} />
+                <Route path="/tours/special-interest-tours/femina-tour" element={<FeminaTour />} />
+
+                {/* tours/SeatInCoachTours */}
+                <Route path="/tours/seat-in-coach-tours" element={<SeatInCoachTours />} />
+
+                {/* tours/Ramayana Trails */}
+                <Route path="/tours/ramayana-trails-in-sri-lanka" element={<RamayanaTrails />} />
+
+                {/* tours/Nature Tours */}
+                <Route path="/tours/nature-tours" element={<NatureTours />} />
+                <Route path="/tours/nature-tours/wild-life-tour" element={<WildLifeTour />} />
+                <Route path="/tours/nature-tours/cycling-tours" element={<CyclingTours />} />
+                <Route path="/tours/nature-tours/adventure-tours" element={<AdventureTours />} />
+                <Route path="/tours/nature-tours/walking-tours" element={<WalkingTour />} />
 
                 {/* experience-sri-lanka */}
                 <Route path="/experience-sri-lanka/explore-nature" element={<ExploreNature />} />

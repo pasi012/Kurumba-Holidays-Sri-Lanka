@@ -11,8 +11,7 @@ import romantic from "../assets/Romantic.jpg";
 import ayurveda from "../assets/tour2.jpg";
 import excursions from "../assets/Excursions.jpg";
 import beach from "../assets/Beach.jpg";
-import specialTours from "../assets/Special Interest Tours.png";
-import vacation from "../assets/Vacation Sri Lanka.jpg";
+import specialTours from "../assets/SpecialInterestTours.png";
 import seatInCoachTours from "../assets/tours.jpg";
 import ramayanaTrails from "../assets/Ramayana Trails in Sri Lanka.jpeg";
 import natureTours from "../assets/Nature Tours.jpg";
@@ -85,14 +84,6 @@ function TourPackages() {
         },
         {
             id: 8,
-            title: "Vacation Sri Lanka",
-            category: "Vacation Sri Lanka",
-            slug: "vacation-sri-lanka",
-            image: vacation,
-            description: "The perfect holiday destination, Sri Lanka has a rich appeal for travellers across the planet offering everything from beachside bliss to an engaging culture."
-        },
-        {
-            id: 9,
             title: "Seat-In-Coach Tours in Sri Lanka",
             category: "Seat-In-Coach Tours in Sri Lanka",
             slug: "seat-in-coach-tours",
@@ -100,7 +91,7 @@ function TourPackages() {
             description: "Embark on a memorable expedition as part of a group tour where you will not only visit sites rich in culture and natural wonder but build new friendships as well."
         },
         {
-            id: 10,
+            id: 9,
             title: "Ramayana Trails in Sri Lanka",
             category: "Ramayana Trails in Sri Lanka",
             slug: "ramayana-trails-in-sri-lanka",
@@ -108,7 +99,7 @@ function TourPackages() {
             description: "Follow the legends of Ramayana trails"
         },
         {
-            id: 11,
+            id: 10,
             title: "Nature Tours",
             category: "Nature Tours",
             slug: "nature-tours",
