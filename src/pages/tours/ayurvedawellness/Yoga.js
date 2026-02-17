@@ -72,7 +72,7 @@ function Yoga() {
                         data-aos-delay="150"
                         className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
                     >
-                        Immerse yourself in the therapeutic powers of yoga during your travels in Sri Lanka. An ancient form of exercise which first originated in India centuries ago, yoga includes specific poses and breathing techniques to bring about complete rejuvenation to one’s body and mind. It’s a form of healing which has been embraced by people around the world for effectively easing stress, chronic pain, and tension. Join Aitken Spence Travels and experience a holistic wellness journey unlike any other.
+                        Immerse yourself in the therapeutic powers of yoga during your travels in Sri Lanka. An ancient form of exercise which first originated in India centuries ago, yoga includes specific poses and breathing techniques to bring about complete rejuvenation to one’s body and mind. It’s a form of healing which has been embraced by people around the world for effectively easing stress, chronic pain, and tension. Join Kurumba Holidays Sri Lanka and experience a holistic wellness journey unlike any other.
                     </p>
 
                     {/* Main Image */}

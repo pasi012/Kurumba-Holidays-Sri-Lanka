@@ -85,7 +85,7 @@ function WildLifeTour() {
                         data-aos-delay="150"
                         className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
                     >
-                        Explore the spectacular beauty of nature in Sri Lanka and create memories that will last a lifetime. Aitken Spence Travels offers comprehensive Sri Lanka nature tours that provide ample opportunities to witness the marvellous appeal of this land’s flourishing wildlife. Discover the country’s many remarkable national parks like Yala, Wilpattu, Minneriya, Kaudulla, and Gal Oya and treat yourself to a truly unforgettable holiday experience!
+                        Explore the spectacular beauty of nature in Sri Lanka and create memories that will last a lifetime. Kurumba Holidays Sri Lanka offers comprehensive Sri Lanka nature tours that provide ample opportunities to witness the marvellous appeal of this land’s flourishing wildlife. Discover the country’s many remarkable national parks like Yala, Wilpattu, Minneriya, Kaudulla, and Gal Oya and treat yourself to a truly unforgettable holiday experience!
                     </p>
 
                     {/* Duration Bar */}
@@ -164,7 +164,7 @@ function WildLifeTour() {
                             {day1 && (
                                 <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
                                     <p>
-                                        You will be arriving at the Bandaranaike International Airport in Katunayake where a representative of Aitken Spence Travels will meet you.
+                                        You will be arriving at the Bandaranaike International Airport in Katunayake where a representative of Kurumba Holidays Sri Lanka will meet you.
                                     </p>
 
                                     <p>

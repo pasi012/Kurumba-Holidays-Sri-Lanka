@@ -87,7 +87,7 @@ function WalkingTours() {
                         data-aos-delay="150"
                         className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
                     >
-                        Endless vistas of tranquil hills, pristine beaches, natures reserves thriving with an abundance of wildlife and various other captivating sights await travellers to satisfy their wanderlust. We, at Aitken Spence Travels, offer you a unique adventure as a part of our special Sri Lanka tours and packages, which givies you the chance to explore a world of contrasts which range from expeditions in the wild to take in the sights of a fast paced city!
+                        Endless vistas of tranquil hills, pristine beaches, natures reserves thriving with an abundance of wildlife and various other captivating sights await travellers to satisfy their wanderlust. We, at Kurumba Holidays Sri Lanka, offer you a unique adventure as a part of our special Sri Lanka tours and packages, which givies you the chance to explore a world of contrasts which range from expeditions in the wild to take in the sights of a fast paced city!
                     </p>
 
                     {/* Duration Bar */}
@@ -166,7 +166,7 @@ function WalkingTours() {
                             {day1 && (
                                 <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
                                     <p>
-                                        You will arrive at the Bandaranaike International Airport in Katunayake where you will be met and greeted by a representative of Aitken Spence Travels. You will then be taken to your luxury hotel in Negombo to rest and relax in comfort.
+                                        You will arrive at the Bandaranaike International Airport in Katunayake where you will be met and greeted by a representative of Kurumba Holidays Sri Lanka. You will then be taken to your luxury hotel in Negombo to rest and relax in comfort.
                                     </p>
 
                                     <p>

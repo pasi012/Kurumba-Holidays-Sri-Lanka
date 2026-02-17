@@ -85,7 +85,7 @@ function ExploreEnchantingSrilanka() {
                         data-aos-delay="150"
                         className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
                     >
-                        Many avid holidaymakers from abroad arrive at our tropical island every year lured by the tantalising promise of sun, sand and surf. Offering only the very best of tour packages in Sri Lanka, we, at Aitken Spence Travels offers you a culturally diverse tour across the country from sunny beaches, cool climes amidst lush hills, iconic heritage sites to nature reserves home to thriving wildlife.
+                        Many avid holidaymakers from abroad arrive at our tropical island every year lured by the tantalising promise of sun, sand and surf. Offering only the very best of tour packages in Sri Lanka, we, at Kurumba Holidays Sri Lanka offers you a culturally diverse tour across the country from sunny beaches, cool climes amidst lush hills, iconic heritage sites to nature reserves home to thriving wildlife.
                     </p>
 
                     {/* Duration Bar */}
@@ -164,7 +164,7 @@ function ExploreEnchantingSrilanka() {
                             {day1 && (
                                 <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
                                     <p>
-                                        Meet and assist on arrival at the airport by Aitken Spence Travels representatives.
+                                        Meet and assist on arrival at the airport by Kurumba Holidays Sri Lanka representatives.
                                         Proceed to Negombo.
                                     </p>
 

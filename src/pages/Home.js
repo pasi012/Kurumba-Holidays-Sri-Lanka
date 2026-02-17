@@ -13,9 +13,16 @@ import hero2 from "../assets/Surfing.png";
 import hero3 from "../assets/hurulupark.jpg";
 import hero4 from "../assets/colomboKithulgala1.jpg";
 
-import tour1 from "../assets/tour1.jpg";
-import tour2 from "../assets/tour2.jpg";
-import tour3 from "../assets/tour3.jpg";
+import cultural from "../assets/Cultural-Dance.jpg";
+import hillCountry from "../assets/tea-estate.jpg";
+import romantic from "../assets/Romantic.jpg";
+import ayurveda from "../assets/tour2.jpg";
+import excursion from "../assets/Excursions.jpg";
+import beach from "../assets/Beach.jpg";
+import specialTours from "../assets/SpecialInterestTours.png";
+import seatInCoachTours from "../assets/tours.jpg";
+import ramayanaTrails from "../assets/Ramayana Trails in Sri Lanka.jpeg";
+import natureTours from "../assets/Nature Tours.jpg";
 
 import mice from "../assets/mice.jpg";
 import transportation from "../assets/Transportation.jpg";
@@ -42,20 +49,85 @@ function Home() {
 
   const tourSlides = [
     {
-      image: tour1,
-      title: "ROMANTIC",
-      subtitle: "Enjoy a magical honeymoon full of romance and adventure.",
+      id: 1,
+      title: "Cultural",
+      category: "Cultural",
+      slug: "cultural",
+      image: cultural,
+      description: "Explore ancient sites seemingly lost in time, uncover the stories behind local legends and be awed by monuments that are intertwined with the island’s culture."
     },
     {
-      image: tour2,
-      title: "AYURVEDA & WELLNESS",
-      subtitle: "Experience true wellness and authentic ayurvedic care.",
+      id: 2,
+      title: "Hill Country",
+      category: "Hill Country",
+      slug: "hill-country",
+      image: hillCountry,
+      description: "A perfect blend of beauty, history and culture, the hill country emulates the very essence of authentic Sri Lanka, tucked away amidst emerald covered mountains."
     },
     {
-      image: tour3,
-      title: "EXCURSIONS",
-      subtitle: "Discover the very best of Sri Lanka.",
+      id: 3,
+      title: "Romantic",
+      category: "Romantic",
+      slug: "romantic",
+      image: romantic,
+      description: "From weddings packages tailor-made just for you and intimate honeymoon experiences, we offer you the chance to celebrate your love in style!"
     },
+    {
+      id: 4,
+      title: "Ayurveda & Wellness",
+      category: "Ayurveda & Wellness",
+      slug: "ayurveda-wellness",
+      image: ayurveda,
+      description: "Indulge in an integrated wellness and Ayurveda retreat where your health and complete well-being is at the centre of a relaxing holiday experience."
+    },
+    {
+      id: 5,
+      title: "Excursions",
+      category: "Excursions",
+      slug: "excursions",
+      image: excursion,
+      description: "Immerse yourself in truly enriching adventures that let you experience the island’s scenic landscapes, traditional culture and exotic wildlife."
+    },
+    {
+      id: 6,
+      title: "Beach",
+      category: "Beach",
+      slug: "beach",
+      image: beach,
+      description: "Surrounded by the Indian Ocean, Sri Lanka has some of the best beaches to discover with pristine shores of paradise amidst seaside serenades."
+    },
+    {
+      id: 7,
+      title: "Special Interest Tours",
+      category: "Special Interest Tours",
+      slug: "special-interest-tours",
+      image: specialTours,
+      description: "Unique perspectives of cultural richness & diversity"
+    },
+    {
+      id: 8,
+      title: "Seat-In-Coach Tours in Sri Lanka",
+      category: "Seat-In-Coach Tours in Sri Lanka",
+      slug: "seat-in-coach-tours",
+      image: seatInCoachTours,
+      description: "Embark on a memorable expedition as part of a group tour where you will not only visit sites rich in culture and natural wonder but build new friendships as well."
+    },
+    {
+      id: 9,
+      title: "Ramayana Trails in Sri Lanka",
+      category: "Ramayana Trails in Sri Lanka",
+      slug: "ramayana-trails-in-sri-lanka",
+      image: ramayanaTrails,
+      description: "Follow the legends of Ramayana trails"
+    },
+    {
+      id: 10,
+      title: "Nature Tours",
+      category: "Nature Tours",
+      slug: "nature-tours",
+      image: natureTours,
+      description: "Embark on discovering a treasured journey of nature!"
+    }
   ];
 
   const places = [
@@ -550,12 +622,14 @@ function Home() {
                 style={{ transform: `translateX(-${current * 100}%)` }}
               >
                 {tourSlides.map((tour, i) => (
-                  <div key={i} className="min-w-full p-6">
+                  <div
+                    onClick={() => navigate(`/tours/${tour.slug}`)}
+                    key={i} className="min-w-full p-6">
                     <div className="rounded-xl overflow-hidden shadow-lg">
                       <img
                         src={tour.image}
                         alt={tour.title}
-                        className="w-full h-[300px] sm:h-[400px] lg:h-[460px] object-cover"
+                        className="w-full h-[300px] sm:h-[400px] lg:h-[460px] object-fill"
                       />
                     </div>
 

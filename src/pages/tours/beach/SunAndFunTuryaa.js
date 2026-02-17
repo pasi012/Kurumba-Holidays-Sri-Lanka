@@ -77,7 +77,7 @@ function SunAndFunTuryaa() {
                         data-aos-delay="150"
                         className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
                     >
-                        Lazy, hazy beach days are spent in dreamlike bliss on the golden-tinged beaches and turquoise depths bordering the island’s south coast. Let Aitken Spence Travels help you experience the best beach holidays in Sri Lanka amidst the charms of picturesque Kalutara. Be it sublime wellness, thrilling recreation or laid-back relaxation, there is much to look forward to on a getaway by the shore.
+                        Lazy, hazy beach days are spent in dreamlike bliss on the golden-tinged beaches and turquoise depths bordering the island’s south coast. Let Kurumba Holidays Sri Lanka help you experience the best beach holidays in Sri Lanka amidst the charms of picturesque Kalutara. Be it sublime wellness, thrilling recreation or laid-back relaxation, there is much to look forward to on a getaway by the shore.
                     </p>
 
                     {/* Duration Bar */}
@@ -156,7 +156,7 @@ function SunAndFunTuryaa() {
                             {day1 && (
                                 <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
                                     <p>
-                                        On arrival at the airport, you will be met by a representative of Aitken Spence Travels. You will then proceed to your hotel in Kalutara. Sprawled on six acres of oceanfront land, Turyaa Kalutara is a five-star hotel with two wings, six floors, two swimming pools, and a host of other facilities. This includes a gym, spa, sauna, business centre, nightclub and a library. With a total of 199 rooms complete with private balconies, the hotel also features a host of recreational activities; enjoy everything from playing badminton to taking on friends in a competitive game of pool.
+                                        On arrival at the airport, you will be met by a representative of Kurumba Holidays Sri Lanka. You will then proceed to your hotel in Kalutara. Sprawled on six acres of oceanfront land, Turyaa Kalutara is a five-star hotel with two wings, six floors, two swimming pools, and a host of other facilities. This includes a gym, spa, sauna, business centre, nightclub and a library. With a total of 199 rooms complete with private balconies, the hotel also features a host of recreational activities; enjoy everything from playing badminton to taking on friends in a competitive game of pool.
                                     </p>
 
                                     <p>

@@ -52,7 +52,7 @@ function SeatInCoachTours() {
                     {/* Description */}
                     <div className="text-center max-w-4xl mx-auto mb-10">
                         <p className="text-gray-600 leading-relaxed">
-                            Prepare to embark on a remarkable adventure in Seat-In-Coach (SIC) tours with Aitken Spence Travels, the most convenient journey to explore the country. Indulge your wanderlust by exploring the captivating south coast, where pristine beaches and azure waters await your arrival. Dive into the awe-inspiring hill country and witness breathtaking landscapes, lush tea plantations, and charming colonial architecture. Immerse yourself in the rich heritage of the Cultural Triangle, where ancient cities, sacred sites, and UNESCO World Heritage sites unravel fascinating stories of the island’s past.
+                            Prepare to embark on a remarkable adventure in Seat-In-Coach (SIC) tours with Kurumba Holidays Sri Lanka, the most convenient journey to explore the country. Indulge your wanderlust by exploring the captivating south coast, where pristine beaches and azure waters await your arrival. Dive into the awe-inspiring hill country and witness breathtaking landscapes, lush tea plantations, and charming colonial architecture. Immerse yourself in the rich heritage of the Cultural Triangle, where ancient cities, sacred sites, and UNESCO World Heritage sites unravel fascinating stories of the island’s past.
                         </p>
 
                         <p className="text-gray-600 leading-relaxed">

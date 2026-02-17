@@ -75,7 +75,7 @@ function Beach() {
                         data-aos-delay="150"
                         className="mt-8 text-gray-600 leading-relaxed max-w-3xl mx-auto"
                     >
-                        Relax on sun-kissed, soft sand and take a dip in azure waters on truly rejuvenating beach holidays in Sri Lanka. Be it the south or east coast, relaxation or recreation, Aitken Spence Travels has the perfect getaway planned for those seeking to spend their time on the country’s stunning shores. Come experience the best Sri Lanka beach tours that will be treasured for a lifetime.
+                        Relax on sun-kissed, soft sand and take a dip in azure waters on truly rejuvenating beach holidays in Sri Lanka. Be it the south or east coast, relaxation or recreation, Kurumba Holidays Sri Lanka has the perfect getaway planned for those seeking to spend their time on the country’s stunning shores. Come experience the best Sri Lanka beach tours that will be treasured for a lifetime.
                     </p>
                 </div>
             </section>

@@ -164,7 +164,7 @@ function CyclingTours() {
                             {day1 && (
                                 <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
                                     <p>
-                                        Once you arrive at the Bandaranaike International Airport in Katunayake, you will be greeted by an Aitken Spence Travels representative. After which you will be transferred to a hotel in Anamaduwa, where you will be able to rest and relax in comfort. During the day you will also get the chance to enjoy a two hour dolphin watching tour along with an invigorating two hour nature walk.
+                                        Once you arrive at the Bandaranaike International Airport in Katunayake, you will be greeted by an Kurumba Holidays Sri Lanka representative. After which you will be transferred to a hotel in Anamaduwa, where you will be able to rest and relax in comfort. During the day you will also get the chance to enjoy a two hour dolphin watching tour along with an invigorating two hour nature walk.
                                     </p>
 
                                     <p className="font-semibold">Overnight stay in Anamaduwa.</p>

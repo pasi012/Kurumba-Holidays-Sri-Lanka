@@ -69,7 +69,7 @@ function RamayanaTrails() {
                         data-aos-delay="150"
                         className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
                     >
-                        The Ramayana Trail is linked with the Hindu epic poem known as the Ramayana; this tale has a section which tells of how Seetha, who was Rama’s wife, was captured by King Ravana. The island carries much evidence of this enthralling narrative; learn more about it with Sri Lanka group tour packages offered by Aitken Spence Travels as we take you to the places where those important chapters of the story took place.
+                        The Ramayana Trail is linked with the Hindu epic poem known as the Ramayana; this tale has a section which tells of how Seetha, who was Rama’s wife, was captured by King Ravana. The island carries much evidence of this enthralling narrative; learn more about it with Sri Lanka group tour packages offered by Kurumba Holidays Sri Lanka as we take you to the places where those important chapters of the story took place.
                     </p>
 
                     {/* Duration Bar */}
@@ -148,7 +148,7 @@ function RamayanaTrails() {
                             {day1 && (
                                 <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
                                     <p>
-                                        On arrival, be met by a representative of Aitken Spence Travels and thereafter proceed to Kandy. En route visit the Pinnawala Elephant Orphanage.
+                                        On arrival, be met by a representative of Kurumba Holidays Sri Lanka and thereafter proceed to Kandy. En route visit the Pinnawala Elephant Orphanage.
                                     </p>
 
                                     <p>

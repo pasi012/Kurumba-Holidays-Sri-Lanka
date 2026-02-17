@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 
-import aboutHero from "../../../assets/tea-estate.jpg";
+import aboutHero from "../../../assets/Romantic.jpg";
 
 import culturalHighlightsTour from "../../../assets/wedding.jpg";
 import sriLankaHighlightsTour from "../../../assets/honeymoon.jpg";
@@ -61,7 +61,7 @@ function Romantic() {
                         data-aos="fade-up"
                         className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
                     >
-                        Romantic Escapes in Sri Lanka
+                        Romantic
                     </h1>
                     <p data-aos="fade-up" data-aos-delay="150" className="mt-6">
                         Weddings, honeymoons and unforgettable moments in paradise.

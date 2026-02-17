@@ -162,7 +162,7 @@ function BeachHoppingAdventures() {
                             {day1 && (
                                 <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
                                     <p>
-                                        When you arrive at the airport you will be met by an Aitken Spence Travels representative.
+                                        When you arrive at the airport you will be met by an Kurumba Holidays Sri Lanka representative.
                                     </p>
 
                                     <p>

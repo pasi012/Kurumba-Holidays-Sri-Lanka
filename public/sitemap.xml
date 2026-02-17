@@ -1,98 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Main Pages -->
-  <url>
-    <loc>https://balasooriyatravels.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<!-- ================= CORE ================= -->
+<url><loc>https://kurumbaholidaysrilanka.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<url><loc>https://kurumbaholidaysrilanka.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://kurumbaholidaysrilanka.com/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tour-packages</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://kurumbaholidaysrilanka.com/experience-sri-lanka</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://kurumbaholidaysrilanka.com/rent-vehicle</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://kurumbaholidaysrilanka.com/expertise</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://kurumbaholidaysrilanka.com/travel-guide</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://kurumbaholidaysrilanka.com/accommodation</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://kurumbaholidaysrilanka.com/property-buying-and-selling</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
-  <url>
-    <loc>https://balasooriyatravels.com/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<!-- ================= LEGAL ================= -->
+<url><loc>https://kurumbaholidaysrilanka.com/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<url><loc>https://kurumbaholidaysrilanka.com/terms-condition</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
-  <url>
-    <loc>https://balasooriyatravels.com/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<!-- ================= TOURS – CULTURAL ================= -->
+<url><loc>https://kurumbaholidaysrilanka.com/tours/cultural</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/cultural/cultural-highlights-tour</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/cultural/sri-lanka-highlights-tour</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/cultural/special-tours-to-sri-lanka</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/cultural/mini-tour-packages</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/cultural/exotic-sri-lanka</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/cultural/sri-lanka-at-leisure</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/cultural/pearl-of-the-indian-ocean</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/cultural/explore-sri-lanka</loc></url>
 
-  <url>
-    <loc>https://balasooriyatravels.com/tour-packages</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+<!-- ================= TOURS – HILL COUNTRY ================= -->
+<url><loc>https://kurumbaholidaysrilanka.com/tours/hill-country</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/hill-country/culture-hill-country-and-wild-life-tour</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/hill-country/sri-lanka-hill-country-tour-3-days</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/hill-country/tour-in-the-hills</loc></url>
 
-  <url>
-    <loc>https://balasooriyatravels.com/custom-tour-packages</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+<!-- ================= TOURS – ROMANTIC ================= -->
+<url><loc>https://kurumbaholidaysrilanka.com/tours/romantic</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/romantic/wedding-in-sri-lanka</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/romantic/honeymoon-tours</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/romantic/romantic-escape</loc></url>
 
-  <url>
-    <loc>https://balasooriyatravels.com/rent-a-car</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+<!-- ================= TOURS – AYURVEDA ================= -->
+<url><loc>https://kurumbaholidaysrilanka.com/tours/ayurveda-wellness</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/ayurveda-wellness/ayurvedic-healing-retreats</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/ayurveda-wellness/meditation</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/ayurveda-wellness/yoga</loc></url>
 
-  <url>
-    <loc>https://balasooriyatravels.com/vehicle-recovery-service</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+<!-- ================= TOURS – BEACH ================= -->
+<url><loc>https://kurumbaholidaysrilanka.com/tours/beach</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/beach/explore-enchanting-srilanka</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/beach/beach-hopping-adventures</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/beach/sun-and-fun-at-turyaa-kalutara</loc></url>
 
-  <url>
-    <loc>https://balasooriyatravels.com/places</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<!-- ================= TOURS – SPECIAL INTEREST ================= -->
+<url><loc>https://kurumbaholidaysrilanka.com/tours/special-interest-tours</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/special-interest-tours/walking-tours</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/special-interest-tours/bawa-tour</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/special-interest-tours/cooking-by-colours</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/special-interest-tours/femina-tour</loc></url>
 
-  <url>
-    <loc>https://balasooriyatravels.com/services</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Places -->
-  <url><loc>https://balasooriyatravels.com/places/battalangunduwa</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/damro-tea</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/ambuluwawa</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/pasikuda</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/nuwara-eliya</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/adam’s-peak</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/kalmunai</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/negombo</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/tangalle</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/pinnawala</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/jaffna</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/diyaluma-falls</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/trincomalee</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/ella</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/mirissa</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/galleface</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/anuradhapura</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/hikkaduwa</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/yala</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/galle</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/udawalawe</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/arugam-bay</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/katharagama</loc></url>
-  <url><loc>https://balasooriyatravels.com/places/polonnaruwa</loc></url>
-
-  <!-- Legal -->
-  <url>
-    <loc>https://balasooriyatravels.com/privacy-policy</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://balasooriyatravels.com/terms-condition</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+<!-- ================= NATURE TOURS ================= -->
+<url><loc>https://kurumbaholidaysrilanka.com/tours/nature-tours</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/nature-tours/wild-life-tour</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/nature-tours/cycling-tours</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/nature-tours/adventure-tours</loc></url>
+<url><loc>https://kurumbaholidaysrilanka.com/tours/nature-tours/walking-tours</loc></url>
 
 </urlset>

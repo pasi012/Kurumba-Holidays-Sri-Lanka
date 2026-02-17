@@ -163,7 +163,7 @@ function RomanticEscape() {
                             {day1 && (
                                 <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
                                     <p>
-                                        Meet and assist on arrival at Airport by Aitken Spence Travels Representative
+                                        Meet and assist on arrival at Airport by Kurumba Holidays Sri Lanka Representative
                                     </p>
 
                                     <p>

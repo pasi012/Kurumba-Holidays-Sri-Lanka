@@ -76,7 +76,7 @@ function AyurvedicHealingRetreats() {
                         data-aos-delay="150"
                         className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
                     >
-                        Heal your mind, body and soul with ayurvedic tours in Sri Lanka that make for perfect wellness retreats. Aitken Spence Travels offers a complete wellness package at Heritance Ayurveda Maha Gedara; enjoy a seven-day stay on a full board basis along with a range of traditional and time-honoured ayurvedic treatments that provide true rejuvenation and revitalisation.
+                        Heal your mind, body and soul with ayurvedic tours in Sri Lanka that make for perfect wellness retreats. Kurumba Holidays Sri Lanka offers a complete wellness package at Heritance Ayurveda Maha Gedara; enjoy a seven-day stay on a full board basis along with a range of traditional and time-honoured ayurvedic treatments that provide true rejuvenation and revitalisation.
                     </p>
 
                     {/* Duration Bar */}
